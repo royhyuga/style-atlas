@@ -1,0 +1,33 @@
+[
+  {
+    "title": "Spain: 5 Ways to Explore",
+    "img": "images/articles/spain-main.jpg",
+    "link": "articles/spain-style.html"
+  },
+  {
+    "title": "Japan: Outfits to Rock Tokyo",
+    "img": "images/articles/japan-main.jpg",
+    "link": "articles/japan-style.html"
+  },
+  {
+    "title": "Parisian Fashion: Oui or Non?",
+    "img": "images/articles/france-main.jpg",
+    "link": "articles/france-style.html"
+  },
+  {
+    "title": "CDMX Colorful Looks",
+    "img": "images/articles/mexico-style.jpg",
+    "link": "articles/mexico-style.html"
+  },
+  {
+    "title": "Coast to Coast Style",
+    "img": "images/articles/usa-style.jpg",
+    "link": "articles/usa-style.html"
+  },
+  {
+    "title": "The 7 Most Effortlessly Cool Looks You\u2019ll See in New York This Spring",
+    "img": "images/articles/nyc-look-1.jpg",
+    "link": "articles/article.html",
+    "summary": "Discover 7 effortlessly cool looks straight from the streets of New York this spring."
+  }
+]
