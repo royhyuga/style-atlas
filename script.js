@@ -1,4 +1,4 @@
-const path = window.location.pathname;
+onst path = window.location.pathname;
 const isIndex = path.includes("index.html") || path === "/";
 const isArticlesPage = path.includes("articles.html");
 const isNewsPage = path.includes("news.html");
@@ -10,6 +10,7 @@ if (document.getElementById("articles-container")) {
     .then(data => {
       const container = document.getElementById("articles-container");
       container.innerHTML = "";
+
       const items = isIndex ? data.slice(-6).reverse() : data.reverse();
 
       items.forEach(article => {
@@ -17,8 +18,9 @@ if (document.getElementById("articles-container")) {
         card.className = "tarjeta vertical";
         card.innerHTML = `
           <a href="${article.link}">
-            <img src="${article.img}" alt="${article.title}">
-            <p>${article.title}</p>
+            <img src="${article.img}" alt="${article.title}" />
+            <h3>${article.title}</h3>
+            <p>${article.summary}</p>
           </a>
         `;
         container.appendChild(card);
@@ -33,6 +35,7 @@ if (document.getElementById("news-container")) {
     .then(data => {
       const container = document.getElementById("news-container");
       container.innerHTML = "";
+
       const items = isIndex ? data.slice(-6).reverse() : data.reverse();
 
       items.forEach(news => {
@@ -40,7 +43,7 @@ if (document.getElementById("news-container")) {
         card.className = "tarjeta vertical";
         card.innerHTML = `
           <a href="${news.link}">
-            <img src="${news.img}" alt="${news.title}">
+            <img src="${news.img}" alt="${news.title}" />
             <p>${news.title}</p>
           </a>
         `;
@@ -48,3 +51,13 @@ if (document.getElementById("news-container")) {
       });
     });
 }
+
+// Barra de progreso
+window.addEventListener("scroll", () => {
+  const bar = document.querySelector(".barra-progreso");
+  if (!bar) return;
+  const scrollTop = document.documentElement.scrollTop;
+  const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const percent = (scrollTop / scrollHeight) * 100;
+  bar.style.width = percent + "%";
+});
