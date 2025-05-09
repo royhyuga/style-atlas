@@ -105,3 +105,51 @@ a {
   text-decoration: none;
   color: inherit;
 }
+/* === Estilo para artículos y noticias === */
+
+.article-card,
+.news-card {
+  width: 100%;
+  max-width: 320px;
+  margin: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease;
+}
+
+.article-card:hover,
+.news-card:hover {
+  transform: translateY(-4px);
+}
+
+.article-card img,
+.news-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.article-card h3,
+.news-card h3 {
+  font-size: 1.1rem;
+  margin: 0.8rem 1rem 0.2rem;
+}
+
+.article-card p,
+.news-card p {
+  font-size: 0.9rem;
+  margin: 0 1rem 1rem;
+  color: #666;
+}
+
+.article-card a,
+.news-card a {
+  display: block;
+  margin: 0 1rem 1rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
