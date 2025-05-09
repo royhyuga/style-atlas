@@ -5,7 +5,7 @@ const isNewsPage = path.includes("news.html");
 
 // Artículos
 if (document.getElementById("articles-container")) {
-  fetch("articles.json")
+  fetch("articles/articles.json")
     .then((res) => res.json())
     .then((data) => {
       const container = document.getElementById("articles-container");
@@ -29,7 +29,7 @@ if (document.getElementById("articles-container")) {
 
 // Noticias
 if (document.getElementById("news-container")) {
-  fetch("news.json")
+  fetch("news/news.json")
     .then((res) => res.json())
     .then((data) => {
       const container = document.getElementById("news-container");
