@@ -1,3 +1,17 @@
+/* RESET GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f6f2;
+  color: #222;
+  line-height: 1.6;
+}
+
 /* Tarjetas horizontales */
 .tarjeta {
   background-color: #fff;
@@ -48,61 +62,18 @@ section {
   margin-bottom: 3rem;
 }
 
-body {
-  margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  background-color: #f9f6f2;
-  color: #222;
-}
-
+/* Enlaces */
 a {
   text-decoration: none;
   color: inherit;
-}/* NAVBAR */
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  background-color: #f5f1e9;
-  padding: 1rem 0;
-  font-family: 'Georgia', serif;
 }
 
-nav a {
-  text-decoration: none;
-  color: #1c1c1c;
-  font-weight: 600;
-  font-size: 1.05rem;
-  position: relative;
-  transition: color 0.3s ease;
-}
-
-nav a::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #1c1c1c;
-  transition: width 0.3s ease;
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-}
-
-nav a:hover {
-  color: #b0281a;
-}
-
-nav a:hover::after {
-  width: 100%;
-}
-
+/* Header fijo */
 header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: #f7f1e6; /* tono claro, armoniza con el fondo del logo */
+  background-color: #f7f1e6;
   padding: 0.5rem 1.5rem;
   border-bottom: 1px solid #ddd;
   display: flex;
@@ -111,6 +82,23 @@ header {
   font-family: 'Georgia', serif;
 }
 
+/* Menú hamburguesa */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background: #000;
+  margin-bottom: 4px;
+  border-radius: 2px;
+}
+
+/* Navegación */
 nav ul {
   list-style: none;
   display: flex;
@@ -128,5 +116,23 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #b0281a; /* color acento de Style Atlas */
+  color: #b0281a;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #fff8f4;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
 }
