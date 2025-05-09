@@ -1,182 +1,62 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Tarjetas horizontales */
+.tarjeta {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 1rem;
+  width: 280px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  display: inline-block;
+  vertical-align: top;
 }
 
-/* Fondo y colores del sitio según logo */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f2e7db; /* fondo crema claro basado en el logo */
-  color: #111827; /* casi negro, elegante y legible */
+.tarjeta:hover {
+  transform: scale(1.03);
 }
 
-/* Navegación */
-nav {
-  background-color: #f2e7db;
-  border-bottom: 1px solid #ddd;
-  padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+.tarjeta img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.tarjeta p {
+  margin: 0.5rem;
+  font-size: 0.95rem;
+  color: #222;
+}
+
+.tarjetas {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-nav a {
-  margin: 0 1rem;
-  text-decoration: none;
-  color: #111827;
-  font-weight: 500;
+/* Sección de títulos */
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #b0281a;
+  padding-left: 1rem;
 }
 
-nav a:hover {
-  color: #9a3412; /* tono cobre elegante */
-}
-
-/* Encabezados */
-h1, h2, h3 {
-  color: #9a3412;
-  margin-bottom: 0.5rem;
-}
-
-/* Contenedor principal */
-main {
-  padding: 2rem;
-  max-width: 1200px;
-  margin: auto;
-}
-
-/* Secciones de artículos y noticias */
+/* Ajuste de layout */
 section {
   margin-bottom: 3rem;
 }
 
-section h2 {
-  font-size: 1.8rem;
-  color: #9a3412;
-  padding-left: 1rem;
-  margin-bottom: 1rem;
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f6f2;
+  color: #222;
 }
 
-/* Tarjetas horizontales para artículos y noticias */
-.tarjetas {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: flex-start;
-}
-
-.article-card {
-  background: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  overflow: hidden;
-  width: 100%;
-  max-width: 340px;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.2s;
-}
-
-.article-card:hover {
-  transform: translateY(-4px);
-}
-
-.article-card img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-bottom: 1px solid #eee;
-}
-
-.article-card h3 {
-  font-size: 1.2rem;
-  margin: 0.8rem;
-}
-
-.article-card p {
-  font-size: 0.95rem;
-  color: #444;
-  margin: 0 0.8rem 0.8rem 0.8rem;
-}
-
-.article-card a {
-  text-decoration: none;
-  color: #9a3412;
-  font-weight: 500;
-  margin: 0 0.8rem 0.8rem;
-}
-
-.article-card a:hover {
-  text-decoration: underline;
-}
-
-/* Footer */
-footer {
-  background-color: #f2e7db;
-  color: #888;
-  text-align: center;
-  padding: 2rem 1rem;
-  font-size: 0.9rem;
-  border-top: 1px solid #ccc;
-}
-
-/* Progreso de lectura */
-.barra-progreso {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 4px;
-  background-color: #9a3412;
-  width: 0%;
-  z-index: 9999;
-}
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .tarjetas {
-    justify-content: center;
- 
-}
-.article-card img {
-  width: 100%;
-  height: 200px; /* Tamaño fijo y razonable */
-  object-fit: cover; /* Recorta la imagen de forma estética */
-  border-bottom: 1px solid #eee;
-}
-/* Ajuste global de imágenes en tarjetas */
-.tarjetas img, .tarjeta img {
-  width: 100%;
-  max-height: 250px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-/* Limita el alto para las tarjetas de país también */
-.tarjeta.vertical img {
-  max-height: 220px;
-}
-
-/* Enlaces sin azul */
 a {
   text-decoration: none;
   color: inherit;
-}
-
-/* Barra de progreso */
-.barra-progreso {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 4px;
-  background-color: #b0281a;
-  z-index: 9999;
 }
