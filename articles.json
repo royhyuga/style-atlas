@@ -1,33 +1,32 @@
 [
   {
-    "title": "Spain: 5 Ways to Explore",
-    "img": "images/articles/spain-main.jpg",
-    "link": "articles/spain-style.html"
+    "title": "5 Outfits to Explore Spain in Style",
+    "summary": "Stylish looks to enjoy the vibrant cities of Spain.",
+    "img": "images/articles/outfits-espana-1.jpg",
+    "link": "articles/spain-outfits.html"
   },
   {
-    "title": "Japan: Outfits to Rock Tokyo",
-    "img": "images/articles/japan-main.jpg",
-    "link": "articles/japan-style.html"
-  },
-  {
-    "title": "Parisian Fashion: Oui or Non?",
-    "img": "images/articles/france-main.jpg",
-    "link": "articles/france-style.html"
-  },
-  {
-    "title": "CDMX Colorful Looks",
-    "img": "images/articles/mexico-style.jpg",
-    "link": "articles/mexico-style.html"
-  },
-  {
-    "title": "Coast to Coast Style",
-    "img": "images/articles/usa-style.jpg",
-    "link": "articles/usa-style.html"
+    "title": "The Best Outfits to Explore Mexico in Style",
+    "summary": "From Oaxaca to Mexico City, discover color and comfort.",
+    "img": "images/articles/outfits-mexico-1.jpg",
+    "link": "articles/mexico-outfits.html"
   },
   {
     "title": "The 7 Most Effortlessly Cool Looks You\u2019ll See in New York This Spring",
+    "summary": "Urban chic and timeless cool in the Big Apple.",
     "img": "images/articles/nyc-look-1.jpg",
-    "link": "articles/article.html",
-    "summary": "Discover 7 effortlessly cool looks straight from the streets of New York this spring."
+    "link": "articles/newyork-looks.html"
+  },
+  {
+    "title": "5 Outfits That Define French Elegance",
+    "summary": "From Paris to Provence, style the French way.",
+    "img": "images/articles/outfits-francia-1.jpg",
+    "link": "articles/france-outfits.html"
+  },
+  {
+    "title": "The Chicest Corners of Paris in 5 Outfits",
+    "summary": "Explore the most stylish corners of Paris with 5 chic outfit ideas.",
+    "img": "images/articles/paris-outfit-1.jpg",
+    "link": "articles/paris-chic-outfits.html"
   }
-{'title': 'The Chicest Corners of Paris in 5 Outfits', 'summary': 'Explore the most stylish corners of Paris with 5 chic outfit ideas.', 'image': 'paris-outfit-1.jpg', 'link': 'articles/paris-chic-outfits.html'}
+]
