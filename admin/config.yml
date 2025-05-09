@@ -1,7 +1,6 @@
 backend:
   name: git-gateway
   branch: main
-  identity_url: https://styleatlas.net/.netlify/identity
 
 media_folder: "images"
 public_folder: "/images"
@@ -28,3 +27,6 @@ collections:
       - { label: "Summary", name: "summary", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Image", name: "image", widget: "image" }
+
+# Solo permitir inicio con GitHub
+login_method: "github"
