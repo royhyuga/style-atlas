@@ -10,17 +10,16 @@ if (document.getElementById("articles-container")) {
     .then(data => {
       const container = document.getElementById("articles-container");
       container.innerHTML = "";
-
       const items = isIndex ? data.slice(-6).reverse() : data.reverse();
 
       items.forEach(article => {
         const card = document.createElement("div");
-        card.className = "article-card";
+        card.className = "tarjeta vertical";
         card.innerHTML = `
-          <img src="${article.img}" alt="${article.title}">
-          <h3>${article.title}</h3>
-          <p>${article.summary}</p>
-          <a href="${article.link}">Read more</a>
+          <a href="${article.link}">
+            <img src="${article.img}" alt="${article.title}">
+            <p>${article.title}</p>
+          </a>
         `;
         container.appendChild(card);
       });
@@ -34,17 +33,16 @@ if (document.getElementById("news-container")) {
     .then(data => {
       const container = document.getElementById("news-container");
       container.innerHTML = "";
-
-      const items = isIndex ? data.slice(-4).reverse() : data.reverse();
+      const items = isIndex ? data.slice(-6).reverse() : data.reverse();
 
       items.forEach(news => {
         const card = document.createElement("div");
-        card.className = "news-card";
+        card.className = "tarjeta vertical";
         card.innerHTML = `
-          <img src="${news.img}" alt="${news.title}">
-          <h3>${news.title}</h3>
-          <p>${news.summary}</p>
-          <a href="${news.link}">Read more</a>
+          <a href="${news.link}">
+            <img src="${news.img}" alt="${news.title}">
+            <p>${news.title}</p>
+          </a>
         `;
         container.appendChild(card);
       });
