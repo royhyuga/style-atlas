@@ -109,4 +109,7 @@ nav ul {
 header {
   background-color: #f5f1e9;
   border-bottom: 1px solid #ccc;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
