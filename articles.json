@@ -2,13 +2,13 @@
   {
     "title": "5 Outfits to Explore Spain in Style",
     "summary": "Stylish looks to enjoy the vibrant cities of Spain.",
-    "img": "images/articles/outfits-espana-1.jpg",
+    "img": "images/outfits/spain/outfits-espana-1.jpg",
     "link": "articles/spain.html"
   },
   {
     "title": "The Best Outfits to Explore Mexico in Style",
     "summary": "From Oaxaca to Mexico City, discover color and comfort.",
-    "img": "images/articles/outfits-mexico-1.jpg",
+    "img": "images/outfits/mexico/outfits-mexico-1.jpg",
     "link": "articles/mexico.html"
   },
   {
@@ -20,13 +20,13 @@
   {
     "title": "5 Outfits That Define French Elegance",
     "summary": "From Paris to Provence, style the French way.",
-    "img": "images/articles/outfits-francia-1.jpg",
+    "img": "images/outfits/france/outfits-france-1.jpg",
     "link": "articles/france.html"
   },
   {
     "title": "The Chicest Corners of Paris in 5 Outfits",
     "summary": "Explore the most stylish corners of Paris with 5 chic outfit ideas.",
-    "img": "images/articles/paris-outfit-1.jpg",
+    "img": "images/outfits/france/paris-outfit-1.jpg",
     "link": "articles/paris.html"
   }
 ]
