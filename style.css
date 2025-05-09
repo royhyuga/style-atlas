@@ -1,155 +1,179 @@
-
-/* Estilos base del sitio */
+/* === ESTILO BASE GENERAL === */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f7f5f2;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #fafafa, #f3f3f3);
   color: #222;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
+/* MODO OSCURO AUTOMÁTICO */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #eee;
+  }
+
+  header, nav, .article-card, .news-card, .tarjeta {
+    background-color: #1e1e1e;
+    color: #eee;
+    border-color: #333;
+  }
+
+  a {
+    color: #f66;
+  }
+}
+
+/* SCROLL PERSONALIZADO */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #c42e2e;
+  border-radius: 10px;
+}
+
+/* HEADER Y NAVEGACIÓN */
 header {
-  background-color: #fff;
+  background: #fff;
   padding: 1rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
+header h1 {
   margin: 0;
-  padding: 0;
+  font-size: 2.2rem;
+  color: #c42e2e;
 }
-
-nav ul li a {
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  gap: 2rem;
+}
+nav a {
   text-decoration: none;
   color: #333;
-  font-weight: 500;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+nav a:hover {
+  color: #c42e2e;
 }
 
-h1 {
-  color: #b32400;
-  font-size: 2rem;
-  margin: 0;
+/* MENÚ RESPONSIVO */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0;
+  }
+  nav li {
+    border-bottom: 1px solid #eee;
+    padding: 0.8rem 0;
+  }
+  header h1 {
+    font-size: 1.8rem;
+  }
 }
 
-main {
-  padding: 2rem;
-}
-
-h2 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-  color: #b32400;
-}
-
-footer {
-  text-align: center;
-  font-size: 0.9rem;
-  padding: 2rem;
-  color: #888;
-}
-
-/* Tarjetas */
+/* TARJETAS GENERALES */
 .tarjetas {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
   justify-content: center;
+  gap: 1.5rem;
 }
 
-/* Estilo actualizado de tarjetas con resumen */
-.tarjeta {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #ddd;
+/* === TARJETAS DE ARTÍCULOS Y NOTICIAS === */
+.article-card, .news-card {
+  background-color: #fff;
+  padding: 1rem;
   border-radius: 8px;
-  overflow: hidden;
-  background: #fff;
-  transition: transform 0.3s ease;
-  max-width: 300px;
-  min-height: 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-align: center;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
-
-.tarjeta:hover {
-  transform: translateY(-5px);
+.article-card:hover, .news-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 }
-
-.tarjeta img {
+.article-card img, .news-card img {
   width: 100%;
   height: auto;
-  display: block;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
-
-.tarjeta.compacta .contenido-texto {
-  padding: 1rem;
+.article-card h3, .news-card h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
 }
-
-.tarjeta.compacta h3 {
-  font-size: 1.05rem;
-  margin: 0 0 0.5rem;
-  color: #111;
+.article-card p, .news-card p {
+  font-size: 0.9rem;
+  color: #555;
 }
-
-.tarjeta.compacta p {
-  font-size: 0.92rem;
-  color: #444;
-  margin: 0;
-}
-
-a {
+.article-card a, .news-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #c42e2e;
   text-decoration: none;
-  color: inherit;
+  font-weight: bold;
+  transition: border-bottom 0.3s;
 }
-/* === Estilo para artículos y noticias === */
+.article-card a:hover, .news-card a:hover {
+  border-bottom: 2px solid #c42e2e;
+}
 
-.article-card,
-.news-card {
-  width: 100%;
-  max-width: 320px;
-  margin: 0.8rem;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  overflow: hidden;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+/* HOVER ENLACES GENERALES */
+a:hover {
+  color: #ff3366;
+  transition: color 0.3s ease;
+}
+
+/* TRANSICIONES SUAVES EN BOTONES */
+button:hover {
+  transform: scale(1.03);
   transition: transform 0.2s ease;
 }
 
-.article-card:hover,
-.news-card:hover {
-  transform: translateY(-4px);
+/* ANIMACIÓN DE APARICIÓN */
+.article-card, .news-card, .tarjeta {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecer 0.5s ease forwards;
+}
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.article-card img,
-.news-card img {
-  width: 100%;
-  height: auto;
-  display: block;
+/* RESPONSIVE TARJETAS */
+@media (max-width: 768px) {
+  .article-card, .news-card, .tarjeta {
+    width: 90%;
+  }
 }
 
-.article-card h3,
-.news-card h3 {
-  font-size: 1.1rem;
-  margin: 0.8rem 1rem 0.2rem;
-}
-
-.article-card p,
-.news-card p {
-  font-size: 0.9rem;
-  margin: 0 1rem 1rem;
-  color: #666;
-}
-
-.article-card a,
-.news-card a {
-  display: block;
-  margin: 0 1rem 1rem;
-  color: #007bff;
+/* BOTÓN UNIVERSAL */
+.boton {
+  display: inline-block;
+  background-color: #c42e2e;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  font-weight: bold;
   text-decoration: none;
-  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+.boton:hover {
+  background-color: #a9281f;
 }
