@@ -177,3 +177,13 @@ button:hover {
 .boton:hover {
   background-color: #a9281f;
 }
+section {
+  margin-bottom: 3rem;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #b0281a;
+  padding-left: 1rem;
+}
