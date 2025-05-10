@@ -1,54 +1,64 @@
 
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>5 Outfits to Explore Mexico in Style</title>
-  <meta name="description" content="Vibrant, colorful, and bold—these 5 outfit ideas are perfect for exploring Mexico's rich culture and scenery.">
-  <link rel="stylesheet" href="../style.css">
+<meta charset="utf-8"/>
+<title>5 Outfits to Explore Mexico in Style</title>
+<meta content="Vibrant, colorful, and bold—these 5 outfit ideas are perfect for exploring Mexico's rich culture and scenery." name="description"/>
+<link href="../style.css" rel="stylesheet"/>
 </head>
 <body>
-  <header>
-    <h1>Style Atlas</h1>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../countries.html">Countries</a></li>
-        <li><a href="../articles.html">Articles</a></li>
-        <li><a href="../news.html">News</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <h2>5 Outfits to Explore Mexico in Style</h2>
-    <img src="../images/articles/mexico-main.jpg" alt="Fashionable outfit in Mexico" style="max-width:100%; height:auto; margin: 1rem 0;">
-    <p><strong>Summary:</strong> From ancient ruins to modern street art, Mexico is a fusion of tradition and flair. Here are 5 outfits to help you look your best while discovering its magic.</p>
+<header>
+<div class="menu-toggle">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="countries.html">Countries</a></li>
+<li><a href="articles.html">Articles</a></li>
+<li><a href="news.html">News</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+</nav>
+</header>
 
-    <p>Mexico is color, texture, flavor, and rhythm. Your outfits should reflect that spirit—fun, practical, and bold. Whether you're heading to a pyramid or a rooftop bar, here's how to stay stylish and comfortable across the country.</p>
+<main>
+<h2>5 Outfits to Explore Mexico in Style</h2>
+<img alt="Fashionable outfit in Mexico" src="../images/articles/mexico-main.jpg" style="max-width:100%; height:auto; margin: 1rem 0;"/>
+<p><strong>Summary:</strong> From ancient ruins to modern street art, Mexico is a fusion of tradition and flair. Here are 5 outfits to help you look your best while discovering its magic.</p>
+<p>Mexico is color, texture, flavor, and rhythm. Your outfits should reflect that spirit—fun, practical, and bold. Whether you're heading to a pyramid or a rooftop bar, here's how to stay stylish and comfortable across the country.</p>
+<h3>1. The Tulum Boho</h3>
+<p>Light cotton dresses, crocheted tops, and wide-brim hats make you both sun-safe and Instagram-ready. Sandals and natural-toned accessories finish the vibe.</p>
+<h3>2. The Mexico City Urbanista</h3>
+<p>Think high-waisted jeans, graphic tee, and chunky boots. Throw on a faux leather jacket or a printed kimono. Add bold earrings for a bit of chaos—CDMX style.</p>
+<h3>3. The Oaxaca Artisan</h3>
+<p>Support local artisans with embroidered tops, woven bags, and handmade sandals. A colorful scarf or headwrap adds cultural flair without going over the top.</p>
+<h3>4. The Yucatán Cool</h3>
+<p>It’s hot. Go for linen shorts, breezy tanks, and lightweight sneakers. Earth tones are perfect for cenotes and jungle ruins. Don’t forget bug spray and a woven fan.</p>
+<h3>5. The Guadalajara Casual</h3>
+<p>Mid-rise trousers, off-shoulder blouse, and slip-on mules make you ready for café hopping and artisan markets. Add a bold lip color and you’re glowing.</p>
+<p><strong>Style Tip:</strong> Don’t over-accessorize. Mexican style is expressive but grounded—comfort meets culture. A bright bag or earrings is all you need to shine.</p>
+<p><strong>Final thought:</strong> Mexico isn’t one style—it’s many. Embrace the layers, the colors, the contrasts. Dress like you’re dancing with the culture itself—because you are.</p>
+</main>
+<footer>
+<p>© 2025 Style Atlas. All rights reserved.</p>
+</footer>
 
-    <h3>1. The Tulum Boho</h3>
-    <p>Light cotton dresses, crocheted tops, and wide-brim hats make you both sun-safe and Instagram-ready. Sandals and natural-toned accessories finish the vibe.</p>
-
-    <h3>2. The Mexico City Urbanista</h3>
-    <p>Think high-waisted jeans, graphic tee, and chunky boots. Throw on a faux leather jacket or a printed kimono. Add bold earrings for a bit of chaos—CDMX style.</p>
-
-    <h3>3. The Oaxaca Artisan</h3>
-    <p>Support local artisans with embroidered tops, woven bags, and handmade sandals. A colorful scarf or headwrap adds cultural flair without going over the top.</p>
-
-    <h3>4. The Yucatán Cool</h3>
-    <p>It’s hot. Go for linen shorts, breezy tanks, and lightweight sneakers. Earth tones are perfect for cenotes and jungle ruins. Don’t forget bug spray and a woven fan.</p>
-
-    <h3>5. The Guadalajara Casual</h3>
-    <p>Mid-rise trousers, off-shoulder blouse, and slip-on mules make you ready for café hopping and artisan markets. Add a bold lip color and you’re glowing.</p>
-
-    <p><strong>Style Tip:</strong> Don’t over-accessorize. Mexican style is expressive but grounded—comfort meets culture. A bright bag or earrings is all you need to shine.</p>
-
-    <p><strong>Final thought:</strong> Mexico isn’t one style—it’s many. Embrace the layers, the colors, the contrasts. Dress like you’re dancing with the culture itself—because you are.</p>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Style Atlas. All rights reserved.</p>
-  </footer>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("nav ul");
+    if (toggle && nav) {
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    }
+  });
+</script>
 </body>
 </html>
