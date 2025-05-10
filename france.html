@@ -10,18 +10,24 @@
 </head>
 <body>
 <div class="barra-progreso"></div>
+
 <header>
-<h1>Style Atlas</h1>
+<div class="menu-toggle">
+<span></span>
+<span></span>
+<span></span>
+</div>
 <nav>
 <ul>
 <li><a href="index.html">Home</a></li>
-<li><a class="activo" href="countries.html">Countries</a></li>
+<li><a href="countries.html">Countries</a></li>
 <li><a href="articles.html">Articles</a></li>
 <li><a href="news.html">News</a></li>
 <li><a href="about.html">About</a></li>
 </ul>
 </nav>
 </header>
+
 <div class="contenido-con-aside">
 <main class="contenido-pagina">
 <h2>Outfits from France</h2>
@@ -73,5 +79,17 @@
 <footer>
 <p>© 2025 Style Atlas. All rights reserved.</p>
 </footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("nav ul");
+    if (toggle && nav) {
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    }
+  });
+</script>
 </body>
 </html>
