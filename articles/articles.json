@@ -28,5 +28,19 @@
     "summary": "Explore the most stylish corners of Paris with 5 chic outfit ideas.",
     "img": "images/articles/paris-outfit-1.jpg",
     "link": "articles/paris-chic-outfits.html"
+  },
+  {
+    "title": "Night Out in Tokyo: Style & Lights",
+    "summary": "Explore Tokyo's vibrant fashion scene through chic night looks and neon-lit neighborhoods.",
+    "img": "images/articles/japan-style-1.jpg",
+    "link": "articles/japan-style.html",
+    "date": "2025-05-06T21:00:00"
+  },
+  {
+    "title": "The 7 Most Effortlessly Cool Looks in New York",
+    "summary": "From SoHo to Central Park, discover how NYC's spring fashion turns sidewalks into runways.",
+    "img": "images/articles/nyc-look-1.jpg",
+    "link": "articles/usa-style.html",
+    "date": "2025-05-07T10:00:00"
   }
 ]
