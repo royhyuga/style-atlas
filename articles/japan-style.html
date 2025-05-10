@@ -1,54 +1,64 @@
 
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>5 Outfits to Explore Japan in Style</title>
-  <meta name="description" content="Explore Japan’s rich fashion culture with 5 stylish outfits perfect for Tokyo streets, Kyoto temples, and beyond.">
-  <link rel="stylesheet" href="../style.css">
+<meta charset="utf-8"/>
+<title>5 Outfits to Explore Japan in Style</title>
+<meta content="Explore Japan’s rich fashion culture with 5 stylish outfits perfect for Tokyo streets, Kyoto temples, and beyond." name="description"/>
+<link href="../style.css" rel="stylesheet"/>
 </head>
 <body>
-  <header>
-    <h1>Style Atlas</h1>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../countries.html">Countries</a></li>
-        <li><a href="../articles.html">Articles</a></li>
-        <li><a href="../news.html">News</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <h2>5 Outfits to Explore Japan in Style</h2>
-    <img src="../images/articles/japan-main.jpg" alt="Stylish outfit in Japan" style="max-width:100%; height:auto; margin: 1rem 0;">
-    <p><strong>Summary:</strong> Japan is where tradition meets futuristic fashion. From serene shrines in Kyoto to the buzzing streets of Tokyo, here are five looks that blend cultural respect with personal expression.</p>
+<header>
+<div class="menu-toggle">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="countries.html">Countries</a></li>
+<li><a href="articles.html">Articles</a></li>
+<li><a href="news.html">News</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+</nav>
+</header>
 
-    <p>Stepping into Japan is like walking through a style spectrum. One moment you’re admiring a minimal kimono in a quiet temple garden, the next you’re passing a teen in Harajuku dressed like an anime superhero. So how do you dress for a country with fashion DNA this eclectic? Here's your answer.</p>
+<main>
+<h2>5 Outfits to Explore Japan in Style</h2>
+<img alt="Stylish outfit in Japan" src="../images/articles/japan-main.jpg" style="max-width:100%; height:auto; margin: 1rem 0;"/>
+<p><strong>Summary:</strong> Japan is where tradition meets futuristic fashion. From serene shrines in Kyoto to the buzzing streets of Tokyo, here are five looks that blend cultural respect with personal expression.</p>
+<p>Stepping into Japan is like walking through a style spectrum. One moment you’re admiring a minimal kimono in a quiet temple garden, the next you’re passing a teen in Harajuku dressed like an anime superhero. So how do you dress for a country with fashion DNA this eclectic? Here's your answer.</p>
+<h3>1. The Kyoto Zen</h3>
+<p>Opt for soft tones: a beige wide-leg pant, a white linen top, and simple leather sandals. Carry a canvas tote and tuck your hair with a wooden pin. Bonus points if your look whispers “calm tea ceremony.”</p>
+<h3>2. The Harajuku Pop</h3>
+<p>Time to go bold. Layer a colorful pleated skirt with graphic socks and a bright oversized tee. Add chunky sneakers, a small crossbody, and funky accessories. The more playful, the better!</p>
+<h3>3. The Tokyo Techwear</h3>
+<p>Think functionality with edge. Black cargo pants, a fitted tech-jacket, high-top sneakers, and a mask (yes, still trendy). Add silver rings or a monochrome cap. It’s sleek, smart and city-ready.</p>
+<h3>4. The Osaka Vintage</h3>
+<p>Mix denim with floral shirts and loafers. Vintage shops rule here. Tuck in your shirt, cuff your pants, and carry a camera like you're scouting photo spots—because you are.</p>
+<h3>5. The Shrine Smart</h3>
+<p>When visiting sacred spaces, go respectful. A midi dress or ankle-length skirt, neutral tones, and comfortable shoes. Bring a light cardigan or shawl to cover up if needed.</p>
+<p><strong>Style Tip:</strong> Always remove your shoes indoors and avoid flashy outfits in spiritual places. In Tokyo? Go wild. In Nara? Stay classic.</p>
+<p><strong>Final thought:</strong> Japanese fashion is fearless yet respectful. So wear your boldest outfit with the softest heart—and let the country inspire your next style evolution.</p>
+</main>
+<footer>
+<p>© 2025 Style Atlas. All rights reserved.</p>
+</footer>
 
-    <h3>1. The Kyoto Zen</h3>
-    <p>Opt for soft tones: a beige wide-leg pant, a white linen top, and simple leather sandals. Carry a canvas tote and tuck your hair with a wooden pin. Bonus points if your look whispers “calm tea ceremony.”</p>
-
-    <h3>2. The Harajuku Pop</h3>
-    <p>Time to go bold. Layer a colorful pleated skirt with graphic socks and a bright oversized tee. Add chunky sneakers, a small crossbody, and funky accessories. The more playful, the better!</p>
-
-    <h3>3. The Tokyo Techwear</h3>
-    <p>Think functionality with edge. Black cargo pants, a fitted tech-jacket, high-top sneakers, and a mask (yes, still trendy). Add silver rings or a monochrome cap. It’s sleek, smart and city-ready.</p>
-
-    <h3>4. The Osaka Vintage</h3>
-    <p>Mix denim with floral shirts and loafers. Vintage shops rule here. Tuck in your shirt, cuff your pants, and carry a camera like you're scouting photo spots—because you are.</p>
-
-    <h3>5. The Shrine Smart</h3>
-    <p>When visiting sacred spaces, go respectful. A midi dress or ankle-length skirt, neutral tones, and comfortable shoes. Bring a light cardigan or shawl to cover up if needed.</p>
-
-    <p><strong>Style Tip:</strong> Always remove your shoes indoors and avoid flashy outfits in spiritual places. In Tokyo? Go wild. In Nara? Stay classic.</p>
-
-    <p><strong>Final thought:</strong> Japanese fashion is fearless yet respectful. So wear your boldest outfit with the softest heart—and let the country inspire your next style evolution.</p>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Style Atlas. All rights reserved.</p>
-  </footer>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("nav ul");
+    if (toggle && nav) {
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    }
+  });
+</script>
 </body>
 </html>
