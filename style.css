@@ -1,3 +1,4 @@
+
 /* RESET GENERAL */
 * {
   margin: 0;
@@ -8,7 +9,7 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f9f6f2;
-  color: #222;
+  color: #333;
   line-height: 1.6;
 }
 
@@ -40,7 +41,7 @@ body {
 .tarjeta p {
   margin: 0.5rem;
   font-size: 0.95rem;
-  color: #222;
+  color: #333;
 }
 
 .tarjetas {
@@ -49,11 +50,16 @@ body {
   justify-content: center;
 }
 
+/* Títulos */
+section h2,
+h1, h2, h3, h4 {
+  color: #b0281a;
+}
+
 /* Sección de títulos */
 section h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: #b0281a;
   padding-left: 1rem;
 }
 
@@ -62,7 +68,7 @@ section {
   margin-bottom: 3rem;
 }
 
-/* Enlaces */
+/* Enlaces generales */
 a {
   text-decoration: none;
   color: inherit;
@@ -93,7 +99,7 @@ header {
 .menu-toggle span {
   height: 3px;
   width: 25px;
-  background: #000;
+  background: #b0281a;
   margin-bottom: 4px;
   border-radius: 2px;
 }
@@ -109,14 +115,14 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: #1a1a1a;
+  color: #b0281a;
   font-weight: 500;
   font-size: 1rem;
   transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #b0281a;
+  color: #7a140a;
 }
 
 @media (max-width: 768px) {
