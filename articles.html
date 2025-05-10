@@ -10,18 +10,24 @@
 </head>
 <body>
 <div class="barra-progreso"></div>
+
 <header>
-<h1>Style Atlas</h1>
+<div class="menu-toggle">
+<span></span>
+<span></span>
+<span></span>
+</div>
 <nav>
 <ul>
 <li><a href="index.html">Home</a></li>
 <li><a href="countries.html">Countries</a></li>
-<li class="activo"><a href="articles.html">Articles</a></li>
+<li><a href="articles.html">Articles</a></li>
 <li><a href="news.html">News</a></li>
 <li><a href="about.html">About</a></li>
 </ul>
 </nav>
 </header>
+
 <main class="contenido-con-aside">
 <section>
 <h2>Fashion &amp; Lifestyle Articles</h2>
@@ -35,5 +41,17 @@
 <ul id="ultimos-articulos"></ul>
 </aside>
 <script src="script.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("nav ul");
+    if (toggle && nav) {
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    }
+  });
+</script>
 </body>
 </html>
