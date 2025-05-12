@@ -132,5 +132,12 @@
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
 </url>
+  <url>
+  <loc>https://styleatlas.net/articles/cdmx-accessories.html</loc>
+  <lastmod>2025-05-12</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+
 
 </urlset>
