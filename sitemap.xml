@@ -164,6 +164,12 @@
   <loc>https://styleatlas.net/news/news-cannes-2025.html</loc>
   <lastmod>2025-05-14</lastmod>
 </url>
+  <url>
+  <loc>https://styleatlas.net/articles/coast-to-coast-style.html</loc>
+  <lastmod>2025-05-15</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
 
 
 </urlset>
