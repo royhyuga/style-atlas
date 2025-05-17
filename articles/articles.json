@@ -72,8 +72,8 @@
 }, 
   {
   "title": "Tokyo After Dark: 5 Night Outfits That Own the City",
-  "filename": "tokyo-after-dark.html",
-  "cover": "../images/articles/tokyo-after-dark-cover.jpg",
+  "link": "articles/tokyo-after-dark.html",
+  "img": "../images/articles/tokyo-after-dark-cover.jpg",
   "summary": "Discover the boldest night fashion in Tokyo — from Shibuya to Roppongi. 5 unforgettable outfits that own the night.",
   "date": "2025-05-17"
 }
