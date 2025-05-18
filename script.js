@@ -1,52 +1,40 @@
-const path = window.location.pathname;
-const isIndex = path.includes("index.html") || path === "/";
-const isArticlesPage = path.includes("articles.html");
-const isNewsPage = path.includes("news.html");
-
-// Artículos
-if (document.getElementById("articles-container")) {
-  fetch("articles/articles.json")
-    .then((res) => res.json())
-    .then((data) => {
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("articles.json")
+    .then(response => response.json())
+    .then(data => {
       const container = document.getElementById("articles-container");
-      container.innerHTML = "";
-
-      const items = isIndex ? data.slice(-6).reverse() : data.reverse();
-
-      items.forEach((article) => {
-        const card = document.createElement("div");
-        card.className = "tarjeta vertical";
+      const latest = data.slice(0, 2); // solo 2 artículos
+      latest.forEach(article => {
+        const card = document.createElement("a");
+        card.href = article.url;
+        card.className = "card";
+        card.style.display = "block";
+        card.style.marginBottom = "2rem";
         card.innerHTML = `
-          <a href="${article.link}">
-            <img src="${article.img}" alt="${article.title}">
-            <p>${article.title}</p>
-          </a>
+          <img src="${article.image}" alt="${article.title}" style="width:100%; border-radius: 4px;">
+          <h3>${article.title}</h3>
+          <p>${article.description}</p>
         `;
         container.appendChild(card);
       });
     });
-}
 
-// Noticias
-if (document.getElementById("news-container")) {
-  fetch("news/news.json")
-    .then((res) => res.json())
-    .then((data) => {
+  fetch("news.json")
+    .then(response => response.json())
+    .then(data => {
       const container = document.getElementById("news-container");
-      container.innerHTML = "";
-
-      const items = isIndex ? data.slice(-6).reverse() : data.reverse();
-
-      items.forEach((news) => {
-        const card = document.createElement("div");
-        card.className = "tarjeta vertical";
+      const latest = data.slice(0, 1); // solo 1 noticia
+      latest.forEach(news => {
+        const card = document.createElement("a");
+        card.href = news.url;
+        card.className = "card";
+        card.style.display = "block";
         card.innerHTML = `
-          <a href="${news.link}">
-            <img src="${news.img}" alt="${news.title}">
-            <p>${news.title}</p>
-          </a>
+          <img src="${news.image}" alt="${news.title}" style="width:100%; border-radius: 4px;">
+          <h3>${news.title}</h3>
+          <p>${news.description}</p>
         `;
         container.appendChild(card);
       });
     });
-}
+});
