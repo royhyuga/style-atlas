@@ -1,5 +1,5 @@
-
 document.addEventListener("DOMContentLoaded", () => {
+  // Cargar artículos
   fetch("articles/articles.json")
     .then(response => response.json())
     .then(data => {
@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
 
+  // Cargar noticias
   fetch("news/news.json")
     .then(response => response.json())
     .then(data => {
@@ -36,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
 
+  // Menú hamburguesa
   const menuBtn = document.getElementById("menu-toggle");
   const navLinks = document.getElementById("nav-links");
 
