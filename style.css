@@ -104,6 +104,8 @@ footer a:hover {
   width: 100%;
   z-index: 10000;
   box-sizing: border-box;
+  flex-wrap: wrap;
+  position: relative; /* clave para que el botón funcione */
 }
 
 .nav-logo {
@@ -179,5 +181,10 @@ footer a:hover {
 
   .menu-toggle.open span:nth-child(3) {
     transform: rotate(-45deg) translate(6px, -6px);
+  }
+}
+@media (max-width: 768px) {
+  .nav-logo {
+    max-width: 60%;
   }
 }
