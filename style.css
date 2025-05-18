@@ -1,144 +1,92 @@
-
-/* RESET GENERAL */
-* {
+body {
+  background-color: #FAF9F6;
+  color: #2E2E2E;
+  font-family: 'Georgia', serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9f6f2;
-  color: #333;
-  line-height: 1.6;
+h1, h2, h3 {
+  color: #8B1E3F;
 }
 
-/* Tarjetas horizontales */
-.tarjeta {
-  background-color: #fff;
-  border-radius: 8px;
+h2 a, h3 a {
+  color: #8B1E3F;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #C8A86B;
+}
+
+.cta {
+  background-color: #8B1E3F;
+  color: #FAF9F6;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cta:hover {
+  background-color: #C8A86B;
+  color: #2E2E2E;
+}
+
+.card {
+  background: #fff;
+  border-radius: 6px;
   overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   margin: 1rem;
-  width: 280px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
-  display: inline-block;
-  vertical-align: top;
-}
-
-.tarjeta:hover {
-  transform: scale(1.03);
-}
-
-.tarjeta img {
-  width: 100%;
-  height: auto;
+  padding: 1rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
   display: block;
+  max-width: 360px;
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
   object-fit: cover;
-  border-bottom: 1px solid #eee;
+  border-radius: 4px;
 }
 
-.tarjeta p {
-  margin: 0.5rem;
+.card h3 {
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.card p {
   font-size: 0.95rem;
-  color: #333;
+  line-height: 1.4;
+  color: #2E2E2E;
 }
 
-.tarjetas {
+.explore-grid, .article-grid, .news-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-/* Títulos */
-section h2,
-h1, h2, h3, h4 {
-  color: #b0281a;
-}
-
-/* Sección de títulos */
-section h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  padding-left: 1rem;
-}
-
-/* Ajuste de layout */
-section {
-  margin-bottom: 3rem;
-}
-
-/* Enlaces generales */
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Header fijo */
-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background-color: #f7f1e6;
-  padding: 0.5rem 1.5rem;
-  border-bottom: 1px solid #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-family: 'Georgia', serif;
-}
-
-/* Menú hamburguesa */
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  margin: 1rem;
-}
-
-.menu-toggle span {
-  height: 3px;
-  width: 25px;
-  background: #b0281a;
-  margin-bottom: 4px;
-  border-radius: 2px;
-}
-
-/* Navegación */
-nav ul {
-  list-style: none;
-  display: flex;
   gap: 1.5rem;
-  margin: 0;
-  padding: 0;
+  padding: 1rem;
 }
 
-nav ul li a {
+footer {
+  background: transparent;
+  font-size: 0.9rem;
+  color: #2E2E2E;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+footer a {
+  color: #8B1E3F;
   text-decoration: none;
-  color: #b0281a;
-  font-weight: 500;
-  font-size: 1rem;
-  transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-  color: #7a140a;
-}
-
-@media (max-width: 768px) {
-  nav ul {
-    display: none;
-    flex-direction: column;
-    background: #fff8f4;
-    width: 100%;
-    margin-top: 1rem;
-  }
-
-  nav ul.active {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: flex;
-  }
+footer a:hover {
+  color: #C8A86B;
 }
