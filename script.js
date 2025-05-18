@@ -3,9 +3,12 @@ document.addEventListener("DOMContentLoaded", () => {
 fetch("articles/articles.json")
   .then(response => response.json())
   .then(data => {
-    const latest = data.reverse().slice(0, 2);
     const container = document.getElementById("articles-container");
-    latest.forEach(article => {
+    let items = window.location.pathname.includes("articles.html")
+      ? data.reverse() // Mostrar todos
+      : data.reverse().slice(0, 2); // Solo 2 en index
+
+    items.forEach(article => {
       const card = document.createElement("a");
       card.href = article.link;
       card.className = "card";
@@ -22,9 +25,12 @@ fetch("articles/articles.json")
   fetch("news/news.json")
   .then(response => response.json())
   .then(data => {
-    const latest = data.reverse().slice(0, 1);
     const container = document.getElementById("news-container");
-    latest.forEach(news => {
+    let items = window.location.pathname.includes("news.html")
+      ? data.reverse() // Mostrar todos
+      : data.reverse().slice(0, 1); // Solo 1 en index
+
+    items.forEach(news => {
       const card = document.createElement("a");
       card.href = news.link;
       card.className = "card";
@@ -36,7 +42,6 @@ fetch("articles/articles.json")
       container.appendChild(card);
     });
   });
-
   // Menú hamburguesa
   const menuBtn = document.getElementById("menu-toggle");
   const navLinks = document.getElementById("nav-links");
