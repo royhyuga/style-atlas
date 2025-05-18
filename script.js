@@ -1,40 +1,46 @@
+
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("articles.json")
+  fetch("articles/articles.json")
     .then(response => response.json())
     .then(data => {
       const container = document.getElementById("articles-container");
-      const latest = data.slice(0, 2); // solo 2 artículos
+      const latest = data.slice(0, 2);
       latest.forEach(article => {
         const card = document.createElement("a");
-        card.href = article.url;
+        card.href = article.link;
         card.className = "card";
-        card.style.display = "block";
-        card.style.marginBottom = "2rem";
         card.innerHTML = `
-          <img src="${article.image}" alt="${article.title}" style="width:100%; border-radius: 4px;">
+          <img src="${article.img}" alt="${article.title}">
           <h3>${article.title}</h3>
-          <p>${article.description}</p>
+          <p>${article.summary}</p>
         `;
         container.appendChild(card);
       });
     });
 
-  fetch("news.json")
+  fetch("news/news.json")
     .then(response => response.json())
     .then(data => {
       const container = document.getElementById("news-container");
-      const latest = data.slice(0, 1); // solo 1 noticia
+      const latest = data.slice(0, 1);
       latest.forEach(news => {
         const card = document.createElement("a");
-        card.href = news.url;
+        card.href = news.link;
         card.className = "card";
-        card.style.display = "block";
         card.innerHTML = `
-          <img src="${news.image}" alt="${news.title}" style="width:100%; border-radius: 4px;">
+          <img src="${news.img}" alt="${news.title}">
           <h3>${news.title}</h3>
-          <p>${news.description}</p>
+          <p>${news.summary}</p>
         `;
         container.appendChild(card);
       });
     });
+
+  const menuBtn = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("nav-links");
+
+  menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+    menuBtn.classList.toggle("open");
+  });
 });
