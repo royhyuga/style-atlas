@@ -12,10 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const items = path.includes("articles") ? data.reverse() : data.reverse().slice(0, 2);
         items.forEach(item => {
           const card = document.createElement("a");
-          card.href = item.link;
+          card.href = basePath + item.link;
           card.className = "card";
           card.innerHTML = `
-            <img src="${item.img}" alt="${item.title}">
+            <img src="${basePath + item.img}" alt="${item.title}">
             <h3>${item.title}</h3>
             <p>${item.summary}</p>
           `;
@@ -33,10 +33,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const items = path.includes("news") ? data.reverse() : data.reverse().slice(0, 1);
         items.forEach(item => {
           const card = document.createElement("a");
-          card.href = item.link;
+          card.href = basePath + item.link;
           card.className = "card";
           card.innerHTML = `
-            <img src="${item.img}" alt="${item.title}">
+            <img src="${basePath + item.img}" alt="${item.title}">
             <h3>${item.title}</h3>
             <p>${item.summary}</p>
           `;
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   }
 
-  // ASIDE: latest news + latest articles
+  // ASIDE: Latest News + Latest Articles
   const latestNews = document.getElementById("latest-news");
   const latestArticles = document.getElementById("latest-articles");
 
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .then(data => {
         data.reverse().slice(0, 3).forEach(item => {
           const li = document.createElement("li");
-          li.innerHTML = `<a href="${item.link}">${item.title}</a>`;
+          li.innerHTML = `<a href="${basePath + item.link}">${item.title}</a>`;
           latestNews.appendChild(li);
         });
       });
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .then(data => {
         data.reverse().slice(0, 3).forEach(item => {
           const li = document.createElement("li");
-          li.innerHTML = `<a href="${item.link}">${item.title}</a>`;
+          li.innerHTML = `<a href="${basePath + item.link}">${item.title}</a>`;
           latestArticles.appendChild(li);
         });
       });
