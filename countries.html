@@ -27,7 +27,22 @@
       z-index: 9999;
       transition: width 0.25s ease-out;
     }
-  </style>
+  
+/* Responsive aside behavior */
+@media (min-width: 1024px) {
+  main {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .responsive-sidebar {
+    max-width: 300px !important;
+    border-top: none !important;
+    border-left: 1px solid #ddd;
+    padding-top: 0 !important;
+    margin-left: 2rem;
+  }
+}
+</style>
 </head>
 <body>
 <div class="barra-progreso"></div>
@@ -44,21 +59,12 @@
 <li><a href="about.html">About</a></li>
 </ul>
 </header>
-<main style="display: flex; flex-direction: row; justify-content: space-between;">
-<section style="flex: 1;">
+<main style="display: flex; flex-direction: column; gap: 2rem; padding: 1rem;">
+<section style="width: 100%;">
 <h2 style="padding-left: 1rem;">Explore Countries</h2>
-<div class="explore-grid">
-<a class="card" href="japan.html">
-<img alt="Japan" src="images/reales/japan/japan.jpg"/>
-<h3>Japan</h3>
-</a>
-<a class="card" href="france.html">
-<img alt="France" src="images/reales/france/france.jpg"/>
-<h3>France</h3>
-</a>
-</div>
+<div class="explore-grid"><a class="card" href="japan.html" style="max-width: 300px; text-align: center;"><img alt="Japan" src="images/reales/japan/japan.jpg"/><h3>Japan</h3></a><a class="card" href="france.html" style="max-width: 300px; text-align: center;"><img alt="France" src="images/reales/france/france.jpg"/><h3>France</h3></a><a class="card" href="mexico.html" style="max-width: 300px; text-align: center;"><img alt="Mexico" src="images/reales/mexico/mexico.jpg"/><h3>Mexico</h3></a><a class="card" href="spain.html" style="max-width: 300px; text-align: center;"><img alt="Spain" src="images/reales/spain/spain.jpg"/><h3>Spain</h3></a><a class="card" href="usa.html" style="max-width: 300px; text-align: center;"><img alt="USA" src="images/reales/usa/usa.jpg"/><h3>USA</h3></a></div>
 </section>
-<aside id="sidebar" style="width: 300px; padding: 1rem; display: none;">
+<aside class="responsive-sidebar" id="sidebar" style="width: 100%; max-width: none; border-top: 1px solid #ddd; padding-top: 2rem;">
 <div class="latest-section">
 <h3 style="border-bottom: 1px solid #ccc;">Latest News</h3>
 <div class="news-grid" id="news-container"></div>
@@ -73,18 +79,5 @@
 <p>© 2025 Style Atlas. <a href="legal/privacy.html">Privacy</a> | <a href="legal/cookies.html">Cookies</a> | <a href="legal/terms.html">Terms</a></p>
 </footer>
 <script src="script.js"></script>
-<script>
-window.addEventListener('scroll', function () {
-  const barra = document.querySelector('.barra-progreso');
-  const scroll = window.scrollY;
-  const height = document.body.scrollHeight - window.innerHeight;
-  const porcentaje = (scroll / height) * 100;
-  barra.style.width = porcentaje + '%';
-});
-
-if (window.innerWidth > 1024) {
-  document.getElementById('sidebar').style.display = 'block';
-}
-</script>
 </body>
 </html>
