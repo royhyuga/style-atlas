@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const isArticlesPage = path.includes("articles");
   const isNewsPage = path.includes("news");
 
-  // Cargar artículos
+  // ARTÍCULOS PRINCIPALES
   fetch("articles/articles.json")
-    .then(response => response.json())
+    .then(res => res.json())
     .then(data => {
       const container = document.getElementById("articles-container");
       if (!container) return;
@@ -23,9 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
 
-  // Cargar noticias
+  // NOTICIAS PRINCIPALES
   fetch("news/news.json")
-    .then(response => response.json())
+    .then(res => res.json())
     .then(data => {
       const container = document.getElementById("news-container");
       if (!container) return;
@@ -43,14 +43,39 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
 
-  // Menú hamburguesa
+  // MENÚ HAMBURGUESA
   const menuBtn = document.getElementById("menu-toggle");
   const navLinks = document.getElementById("nav-links");
-
   if (menuBtn && navLinks) {
     menuBtn.addEventListener("click", () => {
       navLinks.classList.toggle("open");
       menuBtn.classList.toggle("open");
     });
+  }
+
+  // ASIDE DE ÚLTIMAS NOTICIAS Y ARTÍCULOS (solo si existe el aside)
+  const newsList = document.getElementById("latest-news");
+  const articlesList = document.getElementById("latest-articles");
+
+  if (newsList && articlesList) {
+    fetch("news/news.json")
+      .then(res => res.json())
+      .then(data => {
+        data.reverse().slice(0, 3).forEach(item => {
+          const li = document.createElement("li");
+          li.innerHTML = `<a href="${item.link}">${item.title}</a>`;
+          newsList.appendChild(li);
+        });
+      });
+
+    fetch("articles/articles.json")
+      .then(res => res.json())
+      .then(data => {
+        data.reverse().slice(0, 3).forEach(item => {
+          const li = document.createElement("li");
+          li.innerHTML = `<a href="${item.link}">${item.title}</a>`;
+          articlesList.appendChild(li);
+        });
+      });
   }
 });
