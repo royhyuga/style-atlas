@@ -1,114 +1,90 @@
+
 <!DOCTYPE html>
 
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Countries – Style Atlas</title>
-<meta content="Browse fashion by country. Discover outfits from Spain, Japan, France, Mexico and the USA." name="description"/>
+<title>Countries | Style Atlas</title>
 <link href="style.css" rel="stylesheet"/>
-  <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BB12N11QTQ"></script>
+<link href="favicon.ico" rel="icon" type="image/x-icon"/>
+<!-- Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BB12N11QTQ"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-BB12N11QTQ');
-</script>
-
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BB12N11QTQ');
+  </script>
+<style>
+    .barra-progreso {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 4px;
+      background: #C8A86B;
+      width: 0%;
+      z-index: 9999;
+      transition: width 0.25s ease-out;
+    }
+  </style>
 </head>
 <body>
-
 <div class="barra-progreso"></div>
-<header>
-  <h1><a href="index.html" style="color:inherit; text-decoration:none;">Style Atlas</a></h1>
-  <div class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('show');">
-    <span></span><span></span><span></span>
-  </div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="countries.html">Countries</a></li>
-      <li><a href="articles.html">Articles</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-  </nav>
+<header class="navbar">
+<a class="nav-logo" href="index.html">Style Atlas</a>
+<div class="menu-toggle" id="menu-toggle">
+<span></span><span></span><span></span>
+</div>
+<ul class="nav-links" id="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="countries.html">Countries</a></li>
+<li><a href="articles.html">Articles</a></li>
+<li><a href="news.html">News</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
 </header>
-
-
-<div class="contenido-con-aside">
-<main class="contenido-pagina">
-<h2>Explore Fashion by Country</h2>
-<div class="tarjetas">
-<div class="tarjeta vertical">
-<a href="spain.html">
-<img alt="Spain" src="images/reales/espana.jpg"/>
-<p>España</p>
+<main style="display: flex; flex-direction: row; justify-content: space-between;">
+<section style="flex: 1;">
+<h2 style="padding-left: 1rem;">Explore Countries</h2>
+<div class="explore-grid">
+<a class="card" href="japan.html">
+<img alt="Japan" src="images/reales/japan/japan.jpg"/>
+<h3>Japan</h3>
+</a>
+<a class="card" href="france.html">
+<img alt="France" src="images/reales/france/france.jpg"/>
+<h3>France</h3>
 </a>
 </div>
-<div class="tarjeta vertical">
-<a href="japan.html">
-<img alt="Japan" src="images/reales/japan.jpg"/>
-<p>Japan</p>
-</a>
-</div>
-<div class="tarjeta vertical">
-<a href="france.html">
-<img alt="France" src="images/reales/france.jpg"/>
-<p>France</p>
-</a>
-</div>
-<div class="tarjeta vertical">
-<a href="mexico.html">
-<img alt="Mexico" src="images/reales/mexico.jpg"/>
-<p>Mexico</p>
-</a>
-</div>
-<div class="tarjeta vertical">
-<a href="usa.html">
-<img alt="United States" src="images/reales/usa.jpg"/>
-<p>United States</p>
-</a>
-</div>
-</div>
-</main>
-<aside class="barra-lateral">
-<section>
-<h3>Latest News</h3>
-<ul>
-<li><span style="color:#c0392b;">1h ago</span> – <a href="news/news1.html">Style Atlas Launches</a></li>
-<li><span style="color:#c0392b;">4h ago</span> – <a href="news/news2.html">French Street Style</a></li>
-<li><span style="color:#c0392b;">7h ago</span> – <a href="news/news3.html">Mexico Art &amp; Fashion</a></li>
-<li><span style="color:#c0392b;">10h ago</span> – <a href="news/news4.html">Japan Minimalism Twist</a></li>
-</ul>
 </section>
-<section>
-<h3>Latest Articles</h3>
-<ul>
-<li><a href="articles/spain-style.html">Spain: 5 Ways to Explore</a></li>
-<li><a href="articles/japan-style.html">Tokyo Looks</a></li>
-<li><a href="articles/france-style.html">Paris Fashion</a></li>
-<li><a href="articles/mexico-style.html">CDMX Color</a></li>
-<li><a href="articles/usa-style.html">USA Coast Style</a></li>
-</ul>
-</section>
+<aside id="sidebar" style="width: 300px; padding: 1rem; display: none;">
+<div class="latest-section">
+<h3 style="border-bottom: 1px solid #ccc;">Latest News</h3>
+<div class="news-grid" id="news-container"></div>
+</div>
+<div class="latest-section" style="margin-top: 2rem;">
+<h3 style="border-bottom: 1px solid #ccc;">Latest Articles</h3>
+<div class="article-grid" id="articles-container"></div>
+</div>
 </aside>
-</div>
-<footer>
-<p>© 2025 Style Atlas. All rights reserved.</p>
+</main>
+<footer style="text-align: center; font-size: 0.9rem; padding: 2rem 0;">
+<p>© 2025 Style Atlas. <a href="legal/privacy.html">Privacy</a> | <a href="legal/cookies.html">Cookies</a> | <a href="legal/terms.html">Terms</a></p>
 </footer>
-
+<script src="script.js"></script>
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.querySelector(".menu-toggle");
-    const nav = document.querySelector("nav ul");
-    if (toggle && nav) {
-      toggle.addEventListener("click", () => {
-        nav.classList.toggle("active");
-      });
-    }
-  });
+window.addEventListener('scroll', function () {
+  const barra = document.querySelector('.barra-progreso');
+  const scroll = window.scrollY;
+  const height = document.body.scrollHeight - window.innerHeight;
+  const porcentaje = (scroll / height) * 100;
+  barra.style.width = porcentaje + '%';
+});
+
+if (window.innerWidth > 1024) {
+  document.getElementById('sidebar').style.display = 'block';
+}
 </script>
 </body>
 </html>
