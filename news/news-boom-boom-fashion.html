@@ -4,29 +4,50 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Boom Boom Fashion: Gen Z’s Loud Rebellion Against Quiet Luxury</title>
-<meta content="Gen Z is done with subtlety — they're bringing back 80s opulence in a big, loud, gold-drenched way. Explore the Boom Boom Fashion trend in this editorial-style news report by Style Atlas." name="description"/>
+<title>Style Atlas Article</title>
 <link href="../style.css" rel="stylesheet"/>
+<link href="../favicon.ico" rel="icon" type="image/x-icon"/>
+<style>
+    .barra-progreso {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 4px;
+      background: #C8A86B;
+      width: 0%;
+      z-index: 9999;
+      transition: width 0.25s ease-out;
+    }
+  </style>
+<!-- Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BB12N11QTQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BB12N11QTQ');
+</script>
 </head>
-<body>
+<body><div class="barra-progreso"></div>
 <div class="barra-progreso"></div>
-<header>
-<h1><a href="../index.html">Style Atlas</a></h1>
-<nav>
-<ul>
+<header class="navbar">
+<a class="nav-logo" href="../index.html">Style Atlas</a>
+<div class="menu-toggle" id="menu-toggle">
+<span></span><span></span><span></span>
+</div>
+<ul class="nav-links" id="nav-links">
 <li><a href="../index.html">Home</a></li>
 <li><a href="../countries.html">Countries</a></li>
 <li><a href="../articles.html">Articles</a></li>
 <li><a href="../news.html">News</a></li>
 <li><a href="../about.html">About</a></li>
 </ul>
-</nav>
 </header>
 <div class="contenido-con-aside">
-<main class="contenido-pagina">
+<main class="contenido-pagina" style="display: flex; flex-direction: column; gap: 2rem; padding: 2rem;">
 <h2>Boom Boom Fashion: Gen Z’s Loud Rebellion Against Quiet Luxury</h2>
 <img alt="Boom Boom Fashion Cover" src="../images/news/boom-boom-fashion-cover.jpg" style="width:100%;max-width:700px;margin:1.5rem auto;display:block;"/>
-<p><strong></strong> A bold new wave is crashing through fashion — Gen Z is bringing back maximalism, power dressing, and unapologetic style.</strong> Dubbed “Boom Boom Fashion,” this movement reclaims the opulence of the 80s with new energy.</p>
+<p><strong></strong> A bold new wave is crashing through fashion — Gen Z is bringing back maximalism, power dressing, and unapologetic style. Dubbed “Boom Boom Fashion,” this movement reclaims the opulence of the 80s with new energy.</p>
 <p>If 2023 and 2024 were dominated by the hushed tones of quiet luxury — think minimalist blazers, muted palettes, and stealth wealth aesthetics — 2025 is screaming something very different. Literally.</p>
 <h3>What Is Boom Boom Fashion?</h3>
 <p>The term comes from a desire to embrace noise, volume, and exaggerated expression. We’re talking neon power suits, fake furs, massive earrings, and unapologetically bold heels. It's a movement rooted in nostalgia but driven by defiance. If quiet luxury whispers, Boom Boom fashion blasts a speaker through the wall.</p>
@@ -58,6 +79,18 @@
 <blockquote>“In a world trying to mute you, dressing loud is an act of power.”</blockquote>
 <p>So yes — the Boom Boom is back. And Gen Z is dancing to its beat in full color.</p>
 <p><em>Published: 2025-05-17</em></p>
+
+
+<aside class="sidebar-latest responsive-sidebar" id="sidebar">
+<div class="latest-block">
+<h3>Latest News</h3>
+<ul id="latest-news"></ul>
+</div>
+<div class="latest-block">
+<h3>Latest Articles</h3>
+<ul id="latest-articles"></ul>
+</div>
+</aside>
 </main>
 <aside class="barra-lateral">
 <section>
@@ -76,8 +109,20 @@
 </section>
 </aside>
 </div>
-<footer>
-<p>© 2025 Style Atlas. All rights reserved.</p>
+<footer style="text-align: center; font-size: 0.9rem; padding: 2rem 0;">
+<p>© 2025 Style Atlas. <a href="../legal/privacy.html">Privacy</a> |
+  <a href="../legal/cookies.html">Cookies</a> |
+  <a href="../legal/terms.html">Terms</a></p>
 </footer>
+<script src="../script.js"></script>
+<script>
+window.addEventListener('scroll', function () {
+  const barra = document.querySelector('.barra-progreso');
+  const scroll = window.scrollY;
+  const height = document.body.scrollHeight - window.innerHeight;
+  const porcentaje = (scroll / height) * 100;
+  barra.style.width = porcentaje + '%';
+});
+</script>
 </body>
 </html>

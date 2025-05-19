@@ -4,28 +4,47 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Cannes 2025: The Return of the Divas and a New Era of Glamour</title>
-<meta content="Angelina Jolie and Jennifer Lawrence redefine red carpet fashion at Cannes 2025, setting a new standard for modern elegance." name="description"/>
+<title>Style Atlas Article</title>
 <link href="../style.css" rel="stylesheet"/>
+<link href="../favicon.ico" rel="icon" type="image/x-icon"/>
+<style>
+    .barra-progreso {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 4px;
+      background: #C8A86B;
+      width: 0%;
+      z-index: 9999;
+      transition: width 0.25s ease-out;
+    }
+  </style>
+<!-- Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BB12N11QTQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BB12N11QTQ');
+</script>
 </head>
-<body>
+<body><div class="barra-progreso"></div>
 <div class="barra-progreso"></div>
-
-<header>
-<h1><a href="../index.html">Style Atlas</a></h1>
-<nav>
-<ul>
+<header class="navbar">
+<a class="nav-logo" href="../index.html">Style Atlas</a>
+<div class="menu-toggle" id="menu-toggle">
+<span></span><span></span><span></span>
+</div>
+<ul class="nav-links" id="nav-links">
 <li><a href="../index.html">Home</a></li>
 <li><a href="../countries.html">Countries</a></li>
 <li><a href="../articles.html">Articles</a></li>
 <li><a href="../news.html">News</a></li>
 <li><a href="../about.html">About</a></li>
 </ul>
-</nav>
 </header>
-
 <div class="contenido-con-aside">
-<main class="contenido-pagina">
+<main class="contenido-pagina" style="display: flex; flex-direction: column; gap: 2rem; padding: 2rem;">
 <h2>Cannes 2025: The Return of the Divas and a New Era of Glamour</h2>
 <img alt="Cannes 2025 Cover" src="../images/news/cannes-2025-cover.jpg" style="width:100%;max-width:700px;margin:1.5rem auto;display:block;"/>
 <p><strong>Summary:</strong> Angelina Jolie and Jennifer Lawrence return to Cannes 2025 in stunning fashion, redefining what elegance looks like on the red carpet in a new era of conscious glamour.</p>
@@ -40,6 +59,18 @@
 <p>The fashion at Cannes 2025 isn't about shock—it’s about shape, texture, presence. Think sculptural couture. Think narrative fashion. Think glamour as art direction. This is a new chapter for the red carpet, and it’s written in elegance.</p>
 <blockquote>“This red carpet is no longer a spectacle—it’s a story told in silk, silhouette, and strength.”</blockquote>
 <p><em>Published: 2025-05-18</em></p>
+
+
+<aside class="sidebar-latest responsive-sidebar" id="sidebar">
+<div class="latest-block">
+<h3>Latest News</h3>
+<ul id="latest-news"></ul>
+</div>
+<div class="latest-block">
+<h3>Latest Articles</h3>
+<ul id="latest-articles"></ul>
+</div>
+</aside>
 </main>
 <aside class="barra-lateral">
 <section>
@@ -58,8 +89,20 @@
 </section>
 </aside>
 </div>
-<footer>
-<p>© 2025 Style Atlas. All rights reserved.</p>
+<footer style="text-align: center; font-size: 0.9rem; padding: 2rem 0;">
+<p>© 2025 Style Atlas. <a href="../legal/privacy.html">Privacy</a> |
+  <a href="../legal/cookies.html">Cookies</a> |
+  <a href="../legal/terms.html">Terms</a></p>
 </footer>
+<script src="../script.js"></script>
+<script>
+window.addEventListener('scroll', function () {
+  const barra = document.querySelector('.barra-progreso');
+  const scroll = window.scrollY;
+  const height = document.body.scrollHeight - window.innerHeight;
+  const porcentaje = (scroll / height) * 100;
+  barra.style.width = porcentaje + '%';
+});
+</script>
 </body>
 </html>
