@@ -4,44 +4,74 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>News – Style Atlas</title>
-<meta content="Browse all fashion and lifestyle news from Style Atlas. Updated weekly." name="description"/>
+<title>Style Atlas</title>
 <link href="style.css" rel="stylesheet"/>
-  <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BB12N11QTQ"></script>
+<link href="favicon.ico" rel="icon" type="image/x-icon"/>
+<style>
+    .barra-progreso {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 4px;
+      background: #C8A86B;
+      width: 0%;
+      z-index: 9999;
+      transition: width 0.25s ease-out;
+    }
+    @media (min-width: 1024px) {
+      main {
+        flex-direction: row;
+        align-items: flex-start;
+      }
+      .responsive-sidebar {
+        max-width: 300px !important;
+        border-top: none !important;
+        border-left: 1px solid #ddd;
+        padding-top: 0 !important;
+        margin-left: 2rem;
+      }
+    }
+  </style>
+
+<!-- Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BB12N11QTQ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-BB12N11QTQ');
 </script>
-
 </head>
-<body>
-
+<body><div class="barra-progreso"></div>
 <div class="barra-progreso"></div>
-<header>
-  <h1><a href="index.html" style="color:inherit; text-decoration:none;">Style Atlas</a></h1>
-  <div class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('show');">
-    <span></span><span></span><span></span>
-  </div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="countries.html">Countries</a></li>
-      <li><a href="articles.html">Articles</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-  </nav>
+<header class="navbar">
+<a class="nav-logo" href="index.html">Style Atlas</a>
+<div class="menu-toggle" id="menu-toggle">
+<span></span><span></span><span></span>
+</div>
+<ul class="nav-links" id="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="countries.html">Countries</a></li>
+<li><a href="articles.html">Articles</a></li>
+<li><a href="news.html">News</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
 </header>
-
-
-<main class="contenido-con-aside">
+<main class="contenido-con-aside" style="display: flex; flex-direction: column; gap: 2rem; padding: 1rem;">
 <section>
 <h2>Fashion &amp; Lifestyle News</h2>
 <div class="tarjetas" id="news-container"></div>
 </section>
+<aside class="sidebar-latest responsive-sidebar" id="sidebar">
+<div class="latest-block">
+<h3>Últimas Noticias</h3>
+<ul id="latest-news"></ul>
+</div>
+<div class="latest-block">
+<h3>Últimos Artículos</h3>
+<ul id="latest-articles"></ul>
+</div>
+</aside>
 </main>
 <aside class="aside-derecho">
 <h3>Latest News</h3>
@@ -50,17 +80,14 @@
 <ul id="ultimos-articulos"></ul>
 </aside>
 <script src="script.js"></script>
-
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.querySelector(".menu-toggle");
-    const nav = document.querySelector("nav ul");
-    if (toggle && nav) {
-      toggle.addEventListener("click", () => {
-        nav.classList.toggle("active");
-      });
-    }
-  });
+window.addEventListener('scroll', function () {
+  const barra = document.querySelector('.barra-progreso');
+  const scroll = window.scrollY;
+  const height = document.body.scrollHeight - window.innerHeight;
+  const porcentaje = (scroll / height) * 100;
+  barra.style.width = porcentaje + '%';
+});
 </script>
 </body>
 </html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cookie Policy – Style Atlas</title>
+<link href="../style.css" rel="stylesheet"/>
+<link href="../favicon.ico" rel="icon" type="image/x-icon"/>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BB12N11QTQ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BB12N11QTQ');
+  </script>
+<style>
+    .barra-progreso {{
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 4px;
+      background: #C8A86B;
+      width: 0%;
+      z-index: 9999;
+      transition: width 0.25s ease-out;
+    }}
+  </style>
+</head>
+<body>
+<div class="barra-progreso"></div>
+<header class="navbar">
+<a class="nav-logo" href="../index.html">Style Atlas</a>
+<div class="menu-toggle" id="menu-toggle">
+<span></span><span></span><span></span>
+</div>
+<ul class="nav-links" id="nav-links">
+<li><a href="../index.html">Home</a></li>
+<li><a href="../countries.html">Countries</a></li>
+<li><a href="../articles.html">Articles</a></li>
+<li><a href="../news.html">News</a></li>
+<li><a href="../about.html">About</a></li>
+</ul>
+</header>
+<main style="max-width: 800px; margin: 3rem auto; padding: 1rem;">
+<h1 style="color:#8B1E3F;">Cookie Policy</h1>
+<p>We use cookies to improve your browsing experience. By using Style Atlas, you accept our use of cookies in accordance with this policy.</p>
+</main>
+<footer style="text-align: center; font-size: 0.9rem; padding: 2rem 0;">
+<p>© 2025 Style Atlas. <a href="privacy.html">Privacy</a> |
+  <a href="cookies.html">Cookies</a> |
+  <a href="terms.html">Terms</a></p>
+</footer>
+<script src="../script.js"></script>
+<script>
+window.addEventListener('scroll', function () {
+  const barra = document.querySelector('.barra-progreso');
+  const scroll = window.scrollY;
+  const height = document.body.scrollHeight - window.innerHeight;
+  const porcentaje = (scroll / height) * 100;
+  barra.style.width = porcentaje + '%';
+});
+</script>
+</body>
+</html>
