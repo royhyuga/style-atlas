@@ -214,6 +214,11 @@ body {
   font-weight: bold;
   transition: color 0.2s ease;
 }
+ /* Fondo editorial general */
+html, body {
+  background-color: #FAF9F6 !important;
+}
+
 
 .nav-links li a:hover {
   color: #C8A86B;
