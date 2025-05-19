@@ -4,41 +4,38 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>5 Outfits to Explore Japan in Style</title>
-<meta content="Explore Japan’s rich fashion culture with 5 stylish outfits perfect for Tokyo streets, Kyoto temples, and beyond." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Style Atlas Article</title>
 <link href="../style.css" rel="stylesheet"/>
-  <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BB12N11QTQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-BB12N11QTQ');
-</script>
-
+<link href="../favicon.ico" rel="icon" type="image/x-icon"/>
+<style>
+    .barra-progreso {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 4px;
+      background: #C8A86B;
+      width: 0%;
+      z-index: 9999;
+      transition: width 0.25s ease-out;
+    }
+  </style>
 </head>
-<body>
-
-<header>
-  <h1>
-    <a href="../index.html" style="text-decoration: none; color: inherit;">Style Atlas</a>
-  </h1>
-  <div class="menu-toggle">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-  <nav>
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../countries.html">Countries</a></li>
-      <li><a href="../articles.html">Articles</a></li>
-      <li><a href="../news.html">News</a></li>
-      <li><a href="../about.html">About</a></li>
-    </ul>
-  </nav>
+<body><div class="barra-progreso"></div>
+<header class="navbar">
+<a class="nav-logo" href="../index.html">Style Atlas</a>
+<div class="menu-toggle" id="menu-toggle">
+<span></span><span></span><span></span>
+</div>
+<ul class="nav-links" id="nav-links">
+<li><a href="../index.html">Home</a></li>
+<li><a href="../countries.html">Countries</a></li>
+<li><a href="../articles.html">Articles</a></li>
+<li><a href="../news.html">News</a></li>
+<li><a href="../about.html">About</a></li>
+</ul>
 </header>
-<main>
+<main style="display: flex; flex-direction: column; gap: 2rem; padding: 2rem;">
 <h2>5 Outfits to Explore Japan in Style</h2>
 <img alt="Stylish outfit in Japan" src="../images/articles/japan-main.jpg" style="max-width:100%; height:auto; margin: 1rem 0;"/>
 <p><strong>Summary:</strong> Japan is where tradition meets futuristic fashion. From serene shrines in Kyoto to the buzzing streets of Tokyo, here are five looks that blend cultural respect with personal expression.</p>
@@ -55,21 +52,32 @@
 <p>When visiting sacred spaces, go respectful. A midi dress or ankle-length skirt, neutral tones, and comfortable shoes. Bring a light cardigan or shawl to cover up if needed.</p>
 <p><strong>Style Tip:</strong> Always remove your shoes indoors and avoid flashy outfits in spiritual places. In Tokyo? Go wild. In Nara? Stay classic.</p>
 <p><strong>Final thought:</strong> Japanese fashion is fearless yet respectful. So wear your boldest outfit with the softest heart—and let the country inspire your next style evolution.</p>
-</main>
-<footer>
-<p>© 2025 Style Atlas. All rights reserved.</p>
-</footer>
 
+<aside class="sidebar-latest responsive-sidebar" id="sidebar">
+<div class="latest-block">
+<h3>Latest News</h3>
+<ul id="latest-news"></ul>
+</div>
+<div class="latest-block">
+<h3>Latest Articles</h3>
+<ul id="latest-articles"></ul>
+</div>
+</aside>
+</main>
+<footer style="text-align: center; font-size: 0.9rem; padding: 2rem 0;">
+<p>© 2025 Style Atlas. <a href="../legal/privacy.html">Privacy</a> |
+  <a href="../legal/cookies.html">Cookies</a> |
+  <a href="../legal/terms.html">Terms</a></p>
+</footer>
+<script src="../script.js"></script>
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.querySelector(".menu-toggle");
-    const nav = document.querySelector("nav ul");
-    if (toggle && nav) {
-      toggle.addEventListener("click", () => {
-        nav.classList.toggle("active");
-      });
-    }
-  });
+window.addEventListener('scroll', function () {
+  const barra = document.querySelector('.barra-progreso');
+  const scroll = window.scrollY;
+  const height = document.body.scrollHeight - window.innerHeight;
+  const porcentaje = (scroll / height) * 100;
+  barra.style.width = porcentaje + '%';
+});
 </script>
 </body>
 </html>

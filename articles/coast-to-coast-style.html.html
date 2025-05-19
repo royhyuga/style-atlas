@@ -5,54 +5,39 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Coast to Coast Style (USA)</title>
-<meta content="Explore how American fashion shifts from coast to coast - from New York edge to California ease and Midwest revival. A visual editorial by Style Atlas." name="description"/>
+<title>Style Atlas Article</title>
 <link href="../style.css" rel="stylesheet"/>
+<link href="../favicon.ico" rel="icon" type="image/x-icon"/>
 <style>
-    .affiliate-row {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      margin: 2rem 0;
-    }
-    .affiliate-item {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-    .affiliate-button {
-      padding: 0.5rem 1rem;
-      background-color: #000;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      font-size: 0.9rem;
-    }
-    @media(min-width: 600px) {
-      .affiliate-row {
-        flex-direction: row;
-        justify-content: space-between;
-      }
+    .barra-progreso {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 4px;
+      background: #C8A86B;
+      width: 0%;
+      z-index: 9999;
+      transition: width 0.25s ease-out;
     }
   </style>
 </head>
-<body>
+<body><div class="barra-progreso"></div>
 <div class="barra-progreso"></div>
-<header>
-<h1><a href="../index.html" style="text-decoration: none; color: inherit;">Style Atlas</a></h1>
-<nav>
-<ul>
+<header class="navbar">
+<a class="nav-logo" href="../index.html">Style Atlas</a>
+<div class="menu-toggle" id="menu-toggle">
+<span></span><span></span><span></span>
+</div>
+<ul class="nav-links" id="nav-links">
 <li><a href="../index.html">Home</a></li>
 <li><a href="../countries.html">Countries</a></li>
 <li><a href="../articles.html">Articles</a></li>
 <li><a href="../news.html">News</a></li>
 <li><a href="../about.html">About</a></li>
 </ul>
-</nav>
 </header>
 <div class="contenido-con-aside">
-<main class="contenido-pagina">
+<main class="contenido-pagina" style="display: flex; flex-direction: column; gap: 2rem; padding: 2rem;">
 <h2 style="font-size: 2rem; font-weight: 700;">Coast to Coast Style (USA)</h2>
 <img alt="USA Fashion Cover" src="../images/articles/usa-style-cover.jpg" style="width:100%;max-width:700px;margin:1.5rem auto;display:block;"/>
 <p>Coast to Coast Style (USA): What Makes American Fashion So Split and So Global at the Same Time</p>
@@ -146,26 +131,34 @@ Midwest nostalgia is reborn in Japanese magazines.</p>
 </div>
 </div>
 <p><em>Published: 2025-05-15</em></p>
-</main>
-<aside class="barra-lateral">
-<section>
-<h3>Últimas Noticias</h3>
-<ul>
-<li><a href="../news/news-cannes-2025.html">Cannes 2025</a></li>
-<li><a href="../news/news-eurovision-2025.html">Eurovision 2025</a></li>
-</ul>
-</section>
-<section>
-<h3>Últimos Artículos</h3>
-<ul>
-<li><a href="cdmx-color-investigation.html">CDMX Color Investigation</a></li>
-<li><a href="paris-accessories.html">Parisian Accessories</a></li>
-</ul>
-</section>
-</aside>
+
+<aside class="sidebar-latest responsive-sidebar" id="sidebar">
+<div class="latest-block">
+<h3>Latest News</h3>
+<ul id="latest-news"></ul>
 </div>
-<footer>
-<p>© 2025 Style Atlas. All rights reserved.</p>
+<div class="latest-block">
+<h3>Latest Articles</h3>
+<ul id="latest-articles"></ul>
+</div>
+</aside>
+</main>
+
+</div>
+<footer style="text-align: center; font-size: 0.9rem; padding: 2rem 0;">
+<p>© 2025 Style Atlas. <a href="../legal/privacy.html">Privacy</a> |
+  <a href="../legal/cookies.html">Cookies</a> |
+  <a href="../legal/terms.html">Terms</a></p>
 </footer>
+<script src="../script.js"></script>
+<script>
+window.addEventListener('scroll', function () {
+  const barra = document.querySelector('.barra-progreso');
+  const scroll = window.scrollY;
+  const height = document.body.scrollHeight - window.innerHeight;
+  const porcentaje = (scroll / height) * 100;
+  barra.style.width = porcentaje + '%';
+});
+</script>
 </body>
 </html>

@@ -1,48 +1,44 @@
 
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
 <!DOCTYPE html>
 
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>5 Outfits to Explore Spain in Style</title>
-<meta content="Discover 5 stylish outfits perfect for exploring Spain's vibrant cities, from Madrid to Seville." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Style Atlas Article</title>
 <link href="../style.css" rel="stylesheet"/>
-  <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BB12N11QTQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-BB12N11QTQ');
-</script>
-
+<link href="../favicon.ico" rel="icon" type="image/x-icon"/>
+<style>
+    .barra-progreso {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 4px;
+      background: #C8A86B;
+      width: 0%;
+      z-index: 9999;
+      transition: width 0.25s ease-out;
+    }
+  </style>
 </head>
-<body>
-
-<header>
-  <h1>
-    <a href="../index.html" style="text-decoration: none; color: inherit;">Style Atlas</a>
-  </h1>
-  <div class="menu-toggle">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-  <nav>
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../countries.html">Countries</a></li>
-      <li><a href="../articles.html">Articles</a></li>
-      <li><a href="../news.html">News</a></li>
-      <li><a href="../about.html">About</a></li>
-    </ul>
-  </nav>
+<body><div class="barra-progreso"></div>
+<header class="navbar">
+<a class="nav-logo" href="../index.html">Style Atlas</a>
+<div class="menu-toggle" id="menu-toggle">
+<span></span><span></span><span></span>
+</div>
+<ul class="nav-links" id="nav-links">
+<li><a href="../index.html">Home</a></li>
+<li><a href="../countries.html">Countries</a></li>
+<li><a href="../articles.html">Articles</a></li>
+<li><a href="../news.html">News</a></li>
+<li><a href="../about.html">About</a></li>
+</ul>
 </header>
-
-<main>
+<main style="display: flex; flex-direction: column; gap: 2rem; padding: 2rem;">
 <h2>5 Outfits to Explore Spain in Style</h2>
 <img alt="Stylish outfit in Spain" src="../images/articles/spain-main.jpg" style="max-width:100%; height:auto; margin: 1rem 0;"/>
 <p><strong>Summary:</strong> From the sun-drenched streets of Seville to the buzzing energy of Barcelona, Spain offers the perfect backdrop for standout fashion. These 5 outfits are your ticket to turning heads while blending in with the effortless cool of Spanish locals.</p>
@@ -59,21 +55,33 @@
 <p>Cropped denim shorts, a striped sleeveless top, and white sneakers scream coastal cool. Throw on a light denim jacket for the breeze and sunglasses for that Mediterranean sparkle.</p>
 <p><strong>Style Tip:</strong> Spain’s cities are walkable—always balance style with comfort. Swap heels for platforms or sandals, and always carry sunscreen in your chicest tote.</p>
 <p><strong>Final thought:</strong> No matter where you go in Spain, your outfit should reflect the joy, boldness, and charm of the country itself. So pack smart, style freely, and let Spain be your stage.</p>
-</main>
-<footer>
-<p>© 2025 Style Atlas. All rights reserved.</p>
-</footer>
 
+<aside class="sidebar-latest responsive-sidebar" id="sidebar">
+<div class="latest-block">
+<h3>Latest News</h3>
+<ul id="latest-news"></ul>
+</div>
+<div class="latest-block">
+<h3>Latest Articles</h3>
+<ul id="latest-articles"></ul>
+</div>
+</aside>
+</main>
+<footer style="text-align: center; font-size: 0.9rem; padding: 2rem 0;">
+<p>© 2025 Style Atlas. <a href="../legal/privacy.html">Privacy</a> |
+  <a href="../legal/cookies.html">Cookies</a> |
+  <a href="../legal/terms.html">Terms</a></p>
+</footer>
+<script src="../script.js"></script>
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.querySelector(".menu-toggle");
-    const nav = document.querySelector("nav ul");
-    if (toggle && nav) {
-      toggle.addEventListener("click", () => {
-        nav.classList.toggle("active");
-      });
-    }
-  });
+window.addEventListener('scroll', function () {
+  const barra = document.querySelector('.barra-progreso');
+  const scroll = window.scrollY;
+  const height = document.body.scrollHeight - window.innerHeight;
+  const porcentaje = (scroll / height) * 100;
+  barra.style.width = porcentaje + '%';
+});
 </script>
 </body>
+</html>
 </html>

@@ -1,12 +1,38 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>The Chicest Corners of Paris in 5 Outfits</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Style Atlas Article</title>
+<link href="../style.css" rel="stylesheet"/>
+<link href="../favicon.ico" rel="icon" type="image/x-icon"/>
+<style>
+    .barra-progreso {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 4px;
+      background: #C8A86B;
+      width: 0%;
+      z-index: 9999;
+      transition: width 0.25s ease-out;
+    }
+  </style>
 </head>
-<body>
-  <h1>The Chicest Corners of Paris in 5 Outfits</h1>
-  <img src="/images/articles/paris-outfit-1.jpg" alt="Paris Outfit 1" style="max-width: 600px;" />
-  <p>From the cobblestone charm of Le Marais to the grand allure of Saint-Germain-des-Prés, discover how to navigate the city in effortless Parisian style. These 5 outfit ideas blend timeless chic with the flair of the capital’s most iconic spots. Oui oui!</p>
+<body><div class="barra-progreso"></div>
+<h1>The Chicest Corners of Paris in 5 Outfits</h1>
+<img alt="Paris Outfit 1" src="/images/articles/paris-outfit-1.jpg" style="max-width: 600px;"/>
+<p>From the cobblestone charm of Le Marais to the grand allure of Saint-Germain-des-Prés, discover how to navigate the city in effortless Parisian style. These 5 outfit ideas blend timeless chic with the flair of the capital’s most iconic spots. Oui oui!</p>
+<script src="../script.js"></script>
+<script>
+window.addEventListener('scroll', function () {
+  const barra = document.querySelector('.barra-progreso');
+  const scroll = window.scrollY;
+  const height = document.body.scrollHeight - window.innerHeight;
+  const porcentaje = (scroll / height) * 100;
+  barra.style.width = porcentaje + '%';
+});
+</script>
 </body>
 </html>

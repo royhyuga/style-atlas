@@ -4,49 +4,37 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>The 7 Most Effortlessly Cool Looks You’ll See in New York This Spring</title>
-<meta content="Discover 7 effortlessly cool looks from the streets of NYC. A spring style guide that mixes edge, ease, and pure fashion attitude." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Style Atlas Article</title>
 <link href="../style.css" rel="stylesheet"/>
+<link href="../favicon.ico" rel="icon" type="image/x-icon"/>
 <style>
-  .article-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 1.5em auto;
-    border-radius: 10px;
-  }
-</style>
-  <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BB12N11QTQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-BB12N11QTQ');
-</script>
-
+    .barra-progreso {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 4px;
+      background: #C8A86B;
+      width: 0%;
+      z-index: 9999;
+      transition: width 0.25s ease-out;
+    }
+  </style>
 </head>
-<body>
-<header>
-  <h1>
-    <a href="../index.html" style="text-decoration: none; color: inherit;">Style Atlas</a>
-  </h1>
-  <div class="menu-toggle">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-  <nav>
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../countries.html">Countries</a></li>
-      <li><a href="../articles.html">Articles</a></li>
-      <li><a href="../news.html">News</a></li>
-      <li><a href="../about.html">About</a></li>
-    </ul>
-  </nav>
+<body><div class="barra-progreso"></div>
+<header class="navbar">
+<a class="nav-logo" href="../index.html">Style Atlas</a>
+<div class="menu-toggle" id="menu-toggle">
+<span></span><span></span><span></span>
+</div>
+<ul class="nav-links" id="nav-links">
+<li><a href="../index.html">Home</a></li>
+<li><a href="../countries.html">Countries</a></li>
+<li><a href="../articles.html">Articles</a></li>
+<li><a href="../news.html">News</a></li>
+<li><a href="../about.html">About</a></li>
+</ul>
 </header>
-
 <article class="full-article">
 <h1>The 7 Most Effortlessly Cool Looks You’ll See in New York This Spring</h1>
 <p class="meta">Published: May 6, 2025 · Location: New York City</p>
@@ -75,17 +63,15 @@
 <h3>Final Thoughts</h3>
 <p>Style in NYC is never about following rules—it’s about owning your lane. These 7 looks prove that sometimes, the coolest thing you can wear is confidence (and maybe a good pair of sunglasses). Spring is here—make it iconic.</p>
 </article>
-
+<script src="../script.js"></script>
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.querySelector(".menu-toggle");
-    const nav = document.querySelector("nav ul");
-    if (toggle && nav) {
-      toggle.addEventListener("click", () => {
-        nav.classList.toggle("active");
-      });
-    }
-  });
+window.addEventListener('scroll', function () {
+  const barra = document.querySelector('.barra-progreso');
+  const scroll = window.scrollY;
+  const height = document.body.scrollHeight - window.innerHeight;
+  const porcentaje = (scroll / height) * 100;
+  barra.style.width = porcentaje + '%';
+});
 </script>
 </body>
 </html>
