@@ -188,3 +188,38 @@ footer a:hover {
     max-width: 60%;
   }
 }
+/* Estilo editorial para enlaces en el aside */
+.sidebar-latest a {
+  color: #2E2E2E;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sidebar-latest a:hover {
+  color: #C8A86B;
+  text-decoration: underline;
+}
+
+
+
+/* Fondo general editorial */
+body {
+  background-color: #FAF9F6;
+}
+
+/* Corrección navbar enlaces */
+.nav-links li a {
+  text-decoration: none;
+  color: #2E2E2E;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+ /* Fondo editorial general */
+html, body {
+  background-color: #FAF9F6 !important;
+}
+
+
+.nav-links li a:hover {
+  color: #C8A86B;
+}
