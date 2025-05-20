@@ -1,9 +1,5 @@
- body {
-  background-color: #FAF9F6;
-  color: #2E2E2E;
-  font-family: 'Georgia', serif;
-  margin: 0;
-  padding: 0;
+body {
+  padding-top: 80px;
 }
 
 h1, h2, h3 {
@@ -95,19 +91,17 @@ footer a:hover {
 
 /* NAVBAR AJUSTADA */
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  background-color: #FAF9F6;
-  border-bottom: 1px solid #DDD;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  z-index: 10000;
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  position: relative; /* clave para que el botón funcione */
+  z-index: 999;
+  background-color: #FAF9F6;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
 
 .nav-logo {
@@ -206,7 +200,7 @@ footer a:hover {
 
 /* Fondo general editorial */
 body {
-  background-color: #FAF9F6;
+  padding-top: 80px;
 }
 
 /* Corrección navbar enlaces */
@@ -218,7 +212,7 @@ body {
 }
  /* Fondo editorial general */
 html, body {
-  background-color: #FAF9F6 !important;
+  padding-top: 80px;
 }
 
 
