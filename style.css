@@ -278,5 +278,20 @@ main img {
 .affiliate-button:hover {
   background-color: #721731;
 }
+header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: #FAF9F6;
+  padding-top: 0;
+  margin-top: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+/* Asegura que el contenido no tenga un margen top duplicado */
+body {
+  margin: 0;
+  padding: 0;
+}
 
 
