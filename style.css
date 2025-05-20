@@ -299,3 +299,24 @@ body {
   margin: 0;
   padding: 0;
 }
+.nav-logo.clicked {
+  animation: logoGlowPop 0.6s ease;
+}
+
+@keyframes logoGlowPop {
+  0% {
+    transform: scale(1);
+    text-shadow: none;
+    color: #8B1E3F;
+  }
+  50% {
+    transform: scale(1.08);
+    text-shadow: 0 0 10px #C8A86B;
+    color: #C8A86B;
+  }
+  100% {
+    transform: scale(1);
+    text-shadow: none;
+    color: #8B1E3F;
+  }
+}
