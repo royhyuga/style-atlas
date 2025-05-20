@@ -1,6 +1,14 @@
-body {
-  padding-top: 80px;
+* {
+  box-sizing: border-box;
 }
+
+body {
+  
+}
+overflow-x: hidden;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 
 h1, h2, h3 {
   color: #8B1E3F;
@@ -211,9 +219,7 @@ body {
   transition: color 0.2s ease;
 }
  /* Fondo editorial general */
-html, body {
-  padding-top: 80px;
-}
+
 
 
 .nav-links li a:hover {
@@ -293,5 +299,3 @@ body {
   margin: 0;
   padding: 0;
 }
-
-
