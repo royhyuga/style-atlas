@@ -90,6 +90,13 @@
   "img": "images/articles/travel-style-cities-cover.jpg",
   "summary": "A visual guide to 10 cities where fashion and travel blend beautifully. Discover the new global capitals of style.",
   "date": "2025-05-19"
+},
+  {
+  "title": "The Art of Quiet Luxury in Tokyo: Minimalism as a Lifestyle",
+  "summary": "Discover how Tokyo leads the world in minimalist fashion, interiors, and lifestyle with timeless quiet luxury.",
+  "img": "images/articles/tokyo-quiet-luxury-cover.jpg",
+  "link": "articles/tokyo-quiet-luxury.html",
+  "date": "2025-05-21T00:00:00"
 }
 
 
