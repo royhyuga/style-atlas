@@ -83,13 +83,7 @@
     "link": "articles/paris-accessories.html",
     "date": "2025-01-01"
   },
-  {
-    "title": "[TÍTULO DEL ARTÍCULO]",
-    "summary": "[RESUMEN BREVE PARA EL INDEX]",
-    "img": "[RUTA DE IMAGEN PRINCIPAL, por ejemplo: images/articles/example.jpg]",
-    "link": "articles/[nombre-del-archivo].html",
-    "date": "2025-01-01"
-  },
+
   {
     "title": "5 Outfits to Explore Spain in Style",
     "summary": "Stylish looks to enjoy the vibrant cities of Spain.",
