@@ -1,0 +1,23 @@
+[
+  {
+    "title": "[TÍTULO DEL ARTÍCULO]",
+    "summary": "[RESUMEN BREVE PARA EL INDEX]",
+    "img": "[RUTA DE IMAGEN PRINCIPAL, por ejemplo: images/articles/example.jpg]",
+    "link": "articles/[nombre-del-archivo].html",
+    "date": "2025-01-01"
+  },
+  {
+    "title": "The Art of Quiet Luxury in Tokyo: Minimalism as a Lifestyle",
+    "summary": "Discover how Tokyo leads the world in minimalist fashion, interiors, and lifestyle with timeless quiet luxury.",
+    "img": "images/articles/tokyo-quiet-luxury-cover.jpg",
+    "link": "articles/tokyo-quiet-luxury.html",
+    "date": "2025-05-21T00:00:00"
+  },
+  {
+    "title": "10 Destinations Where Style and Travel Collide in 2025",
+    "summary": "A visual guide to 10 cities where fashion and travel blend beautifully. Discover the new global capitals of style.",
+    "img": "images/articles/travel-style-cities-cover.jpg",
+    "link": "articles/travel-destinations-2025.html",
+    "date": "2025-05-19"
+  }
+]
