@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // ARTÍCULOS DINÁMICOS (en páginas principales)
   const containerArticles = document.getElementById("articles-container");
   if (containerArticles) {
-    fetch(basePath + "articles/articles.json")
+    fetch(basePath + "/articles.json")
       .then(res => res.json())
       .then(data => {
         const items = path.includes("articles") ? data.reverse() : data.reverse().slice(0, 2);
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // NOTICIAS DINÁMICAS
   const containerNews = document.getElementById("news-container");
   if (containerNews) {
-    fetch(basePath + "news/news.json")
+    fetch(basePath + "/news.json")
       .then(res => res.json())
       .then(data => {
         const items = path.includes("news") ? data.reverse() : data.reverse().slice(0, 1);
