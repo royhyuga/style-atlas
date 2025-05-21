@@ -1,5 +1,12 @@
 [
   {
+    "title": "Cannes 2025: The Return of the Divas and a New Era of Glamour",
+    "summary": "Angelina Jolie and Jennifer Lawrence redefine red carpet fashion at Cannes 2025, setting a new standard for modern elegance.",
+    "img": "images/news/cannes-2025-cover.jpg",
+    "link": "news/cannes-2025-glamour.html",
+    "date": "2025-05-18"
+  },
+  {
     "title": "Red Carpet Minimalism Takes Over Cannes 2025",
     "summary": "Quiet luxury stole the spotlight on May 20 at Cannes, as elegance redefined the red carpet with minimalist style.",
     "img": "images/news/cannes-minimalism-cover.jpg",
@@ -7,10 +14,87 @@
     "date": "2025-05-20"
   },
   {
+    "title": "Boom Boom Fashion: Gen Z’s Loud Rebellion Against Quiet Luxury",
+    "summary": "Gen Z is done with subtlety — they're bringing back 80s opulence in a big, loud, gold-drenched way. Discover the Boom Boom Fashion wave.",
+    "img": "images/news/boom-boom-fashion-cover.jpg",
+    "link": "news/news-boom-boom-fashion.html",
+    "date": "2025-05-17"
+  },
+  {
+    "title": "Cannes 2025 Has Begun — And the Red Carpet Is Already a War of Style",
+    "summary": "The Cannes Film Festival kicked off yesterday, and fashion has already taken center stage — from transparent gowns to unexpected suits.",
+    "img": "images/news/cannes-news-cover.jpg",
+    "link": "news/news-cannes-2025.html",
+    "date": "2025-01-01"
+  },
+  {
+    "title": "Bella Hadid Breaks the Dress Code at Cannes 2025",
+    "summary": "Bella Hadid returns to the red carpet at Cannes 2025, challenging the festival’s new modesty dress code in a daring Saint Laurent gown.",
+    "img": "images/news/news-cannes-bella-style.jpg",
+    "link": "news/news-cannes-bella-style.html",
+    "date": "2025-05-15"
+  },
+  {
+    "title": "Eurovision 2025: Fashion and Culture Converge in Tonight's Semifinal",
+    "summary": "Eurovision 2025 kicks off tonight in Basel, where fashion rivals music on Europe’s most visually expressive stage.",
+    "img": "images/news/eurovision-2025.jpg",
+    "link": "news/news-eurovision-2025.html",
+    "date": "2025-01-01"
+  },
+  {
     "title": "Alessandro Michele Returns to Gucci in 2025",
     "summary": "Gucci brings back Alessandro Michele as Creative Director, marking a bold new era of narrative luxury and stylistic identity.",
     "img": "images/news/news-gucci-michele-return.jpg",
     "link": "news/news-gucci-michele-return.html",
     "date": "2025-05-19"
+  },
+  {
+    "title": "Native Fashion Week Returns to Santa Fe: 110 Nations, One Historic Runway",
+    "summary": "Native Fashion Week 2025 unites 50+ Indigenous designers from 110 tribal nations in Santa Fe. A cultural celebration of identity and sovereignty through fashion.",
+    "img": "images/news/news-native-fashion-week.jpg",
+    "link": "news/news-native-fashion-week.html",
+    "date": "2025-05-16"
+  },
+  {
+    "title": "Paris in Detail: What Street Style Is Really Made Of",
+    "summary": "Style isn’t just on runways — it’s in the subtle power of scarves, bags and details seen on real Parisian streets.",
+    "img": "images/news/news-paris-detail.jpg",
+    "link": "news/news-paris-detail.html",
+    "date": "2025-01-01"
+  },
+  {
+    "title": "Style Atlas Launches with Big Impact",
+    "summary": "Discover how Style Atlas is shaking up the fashion scene with a bold global debut.",
+    "img": "images/news/news1.jpg",
+    "link": "news/news1.html",
+    "date": "2025-01-01"
+  },
+  {
+    "title": "French Street Style Goes Global",
+    "summary": "From Paris to the world—how French fashion is influencing global street style.",
+    "img": "images/news/news2.jpg",
+    "link": "news/news2.html",
+    "date": "2025-01-01"
+  },
+  {
+    "title": "Mexico’s Art Scene Inspires Fashion",
+    "summary": "See how Mexico’s vibrant art and culture are fueling unique fashion trends.",
+    "img": "images/news/news3.jpg",
+    "link": "news/news3.html",
+    "date": "2025-01-01"
+  },
+  {
+    "title": "Tokyo After Dark: Night Fashion That’s Turning Heads in Shibuya",
+    "summary": "Shibuya shines at night not only with lights, but with bold looks turning heads on every street corner.",
+    "img": "images/news/tokyo-after-dark-full.jpg",
+    "link": "news/tokyo-after-dark.html",
+    "date": "2025-05-10"
+  },
+  {
+    "title": "Minimalism in Japan Gets a Bold Twist",
+    "summary": "Japan’s minimalist style evolves with colorful and daring new elements.",
+    "img": "images/news/news4.jpg",
+    "link": "news/news4.html",
+    "date": "2025-01-01"
   }
 ]

@@ -1,10 +1,101 @@
 [
   {
+    "title": "Style in a Cup: 3 Coffee Shops Redefining Urban Cool",
+    "summary": "From Seoul to CDMX, explore how café culture reflects global style and identity. More than coffee — it’s aesthetic storytelling.",
+    "img": "images/articles/style-in-a-cup-cover.jpg",
+    "link": "articles/article-style-in-a-cup.html",
+    "date": "2025-05-18T08:00:00"
+  },
+  {
+    "title": "The 7 Most Effortlessly Cool Looks You'll See in New York This Spring",
+    "summary": "Urban chic and timeless cool in the Big Apple.",
+    "img": "images/articles/nyc-look-1.jpg",
+    "link": "articles/article.html",
+    "date": "2025-01-01"
+  },
+  {
+    "title": "The Color and Cool of CDMX: 5 Outfits That Speak the City",
+    "summary": "From Roma Norte to Coyoacán, discover 5 stylish outfits that capture the bold, vibrant fashion energy of Mexico City.",
+    "img": "images/articles/cdmx-accessories-cover.jpg",
+    "link": "articles/cdmx-accessories.html",
+    "date": "2025-01-01"
+  },
+  {
+    "title": "Is Mexico the New Capital of Color?",
+    "summary": "CDMX claims its place on the fashion map with bold color, confidence and pure style power.",
+    "img": "images/articles/cdmx-color-1.jpg",
+    "link": "articles/cdmx-color-investigation.html",
+    "date": "2025-01-01"
+  },
+  {
+    "title": "Coast to Coast Style (USA): What Makes American Fashion So Split and So Global at the Same Time",
+    "summary": "Explore how American fashion shifts from coast to coast — from New York edge to California ease and Midwest revival. A visual editorial by Style Atlas.",
+    "img": "images/articles/usa-style-cover.jpg",
+    "link": "articles/coast-to-coast-style.html",
+    "date": "2025-05-15T00:00:00"
+  },
+  {
+    "title": "5 Outfits That Define French Elegance",
+    "summary": "From Paris to Provence, style the French way.",
+    "img": "images/outfits/france/outfits-france-1.jpg",
+    "link": "articles/france-style.html",
+    "date": "2025-01-01"
+  },
+  {
+    "title": "Night Out in Tokyo: Style & Lights",
+    "summary": "Explore Tokyo's vibrant fashion scene through chic night looks and neon-lit neighborhoods.",
+    "img": "images/outfits/japan/outfits-japan-1.jpg",
+    "link": "articles/japan-style.html",
+    "date": "2025-05-06T21:00:00"
+  },
+  {
+    "title": "The Best Outfits to Explore Mexico in Style",
+    "summary": "From Oaxaca to Mexico City, discover color and comfort.",
+    "img": "images/outfits/mexico/outfits-mexico-1.jpg",
+    "link": "articles/mexico-style.html",
+    "date": "2025-01-01"
+  },
+  {
+    "title": "Modern Romance in Milan: 5 Looks to Fall in Love With This Summer",
+    "summary": "Discover Milan’s most romantic summer looks — linen, silk, monochrome, and more. A visual editorial celebrating Italian elegance and effortless style.",
+    "img": "images/articles/milan-style-cover.jpg",
+    "link": "articles/modern-romance-milan.html",
+    "date": "2025-05-16T00:00:00"
+  },
+  {
+    "title": "From Sidewalks to Skylines: The Real Fashion Pulse of New York in 2025",
+    "summary": "Explore New York’s evolving fashion scene in 2025, from Bushwick’s bold prints to the clean elegance of the Upper East Side.",
+    "img": "images/articles/nyc-accessories-cover.jpg",
+    "link": "articles/nyc-style-pulse-extended.html",
+    "date": "2025-01-01"
+  },
+  {
+    "title": "5 Parisian Accessories Worth Obsessing Over",
+    "summary": "Silk scarves, bold berets, and crossbody bags — discover the 5 Parisian accessories that make every outfit unforgettable.",
+    "img": "images/day1/paris-accessories-cover.jpg",
+    "link": "articles/paris-accessories.html",
+    "date": "2025-01-01"
+  },
+  {
     "title": "[TÍTULO DEL ARTÍCULO]",
     "summary": "[RESUMEN BREVE PARA EL INDEX]",
     "img": "[RUTA DE IMAGEN PRINCIPAL, por ejemplo: images/articles/example.jpg]",
     "link": "articles/[nombre-del-archivo].html",
     "date": "2025-01-01"
+  },
+  {
+    "title": "5 Outfits to Explore Spain in Style",
+    "summary": "Stylish looks to enjoy the vibrant cities of Spain.",
+    "img": "images/outfits/spain/outfits-espana-1.jpg",
+    "link": "articles/spain-style.html",
+    "date": "2025-01-01"
+  },
+  {
+    "title": "Tokyo After Dark: 5 Night Outfits That Own the City",
+    "summary": "Discover the boldest night fashion in Tokyo — from Shibuya to Roppongi. 5 unforgettable outfits that own the night.",
+    "img": "../images/articles/tokyo-after-dark-cover.jpg",
+    "link": "articles/tokyo-after-dark.html",
+    "date": "2025-05-17"
   },
   {
     "title": "The Art of Quiet Luxury in Tokyo: Minimalism as a Lifestyle",
