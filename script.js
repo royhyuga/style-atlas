@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const latestArticles = document.getElementById("latest-articles");
 
   if (latestNews && latestArticles) {
-    fetch(basePath + "news/news.json")
+    fetch(basePath + "/news.json")
       .then(res => res.json())
       .then(data => {
         data.reverse().slice(0, 3).forEach(item => {
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
 
-    fetch(basePath + "articles/articles.json")
+    fetch(basePath + "/articles.json")
       .then(res => res.json())
       .then(data => {
         data.reverse().slice(0, 3).forEach(item => {
