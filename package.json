@@ -1,0 +1,9 @@
+{
+  "name": "style-atlas",
+  "version": "1.0.0",
+  "description": "Automated system for Style Atlas content",
+  "scripts": {
+    "update": "node update-data.js"
+  },
+  "type": "module"
+}
