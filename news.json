@@ -96,5 +96,12 @@
     "img": "images/news/news4.jpg",
     "link": "news/news4.html",
     "date": "2025-01-01"
+  },
+  {
+    "title": "Pierpaolo Piccioli Joins Balenciaga: A New Chapter Begins",
+    "summary": "Fashion shifts as Pierpaolo Piccioli takes the reins at Balenciaga, bringing emotion, structure, and a fresh vision for the house.",
+    "img": "images/news/piccioli-balenciaga-cover.jpg",
+    "link": "news/piccioli-balenciaga.html",
+    "date": "2025-05-21"
   }
 ]
