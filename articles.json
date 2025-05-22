@@ -83,7 +83,6 @@
     "link": "articles/paris-accessories.html",
     "date": "2025-01-01"
   },
-
   {
     "title": "5 Outfits to Explore Spain in Style",
     "summary": "Stylish looks to enjoy the vibrant cities of Spain.",
@@ -111,5 +110,12 @@
     "img": "images/articles/travel-style-cities-cover.jpg",
     "link": "articles/travel-destinations-2025.html",
     "date": "2025-05-19"
+  },
+  {
+    "title": "Windy City Looks: The Unexpected Style Power of Chicago",
+    "summary": "From Wicker Park to Downtown, Chicago blends streetwear, elegance, and cultural depth into a fashion identity that's bold and real.",
+    "img": "images/articles/chicago-style-cover.jpg",
+    "link": "articles/windy-city-looks.html",
+    "date": "2025-05-22"
   }
 ]
