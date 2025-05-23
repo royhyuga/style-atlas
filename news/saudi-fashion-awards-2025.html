@@ -93,5 +93,18 @@ link: news/saudi-fashion-awards-2025.html
   </footer>
 
   <script src="/script.js"></script>
+  <script>
+window.addEventListener('scroll', function () {
+  const barra = document.querySelector('.barra-progreso');
+  const scroll = window.scrollY;
+  const height = document.body.scrollHeight - window.innerHeight;
+  const porcentaje = (scroll / height) * 100;
+  barra.style.width = porcentaje + '%';
+});
+document.getElementById("menu-toggle").addEventListener("click", function () {
+  document.getElementById("nav-links").classList.toggle("show");
+});
+</script>
+
 </body>
 </html>
