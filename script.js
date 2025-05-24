@@ -85,3 +85,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// Barra de progreso de lectura
+window.addEventListener("scroll", () => {
+  const barra = document.querySelector(".barra-progreso");
+  const scrollTop = document.documentElement.scrollTop;
+  const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const width = (scrollTop / height) * 100;
+  if (barra) barra.style.width = `${width}%`;
+});
