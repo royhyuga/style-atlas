@@ -124,5 +124,12 @@
     "img": "images/articles/chicago-style-cover.jpg",
     "link": "articles/windy-city-looks.html",
     "date": "2025-05-22"
+  },
+  {
+    "title": "Zurich Layers: Cold-Season Looks from the Most Stylish Swiss City",
+    "summary": "From Bahnhofstrasse to the Limmat, discover how Zurich locals master cold-weather layering with timeless style, neutral palettes, and quiet luxury.",
+    "img": "images/articles/zurich-cover.jpg",
+    "link": "articles/zurich-layers.html",
+    "date": "2025-05-24"
   }
 ]
