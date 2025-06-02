@@ -180,5 +180,12 @@
     "img": "images/news/space-needle-2025.jpg",
     "link": "news/space-needle-2025.html",
     "date": "2025-05-25"
+  },
+  {
+    "title": "Spain Faces Heatwave and Storms as Meteorological Summer Begins",
+    "summary": "Spain enters summer with soaring temperatures reaching 40°C and sudden storms, prompting alerts across multiple regions.",
+    "img": "images/news/spain-heatwave-june-2025.jpg",
+    "link": "news/spain-heatwave-june-2025.html",
+    "date": "2025-06-02"
   }
 ]
